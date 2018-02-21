@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.cc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/******************************************************/
+/*****************Fonts Assignment*********************/
+/******************************************************/
+
+.ht {
+  //headet text
+  font-family: "Roboto", sans-serif;
+  // font-size: 18px;
+  color: #000000;
+}
+
+.pt {
+  //page title
+  font-family: "Roboto Slab", sans-serif;
+  // font-size: 30px;
+  font-weight: bold;
+  color: #4b44c5;
+}
+
+.st {
+  //section title
+  font-family: "Roboto Slab", sans-serif;
+  // font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.mb {
+  //main body
+  font-family: "Roboto", sans-serif;
+  // font-size: 12px;
+  font-weight: lighter;
+  color: #a8afb9;
+  letter-spacing: 1.2px;
+}
+
+.bt {
+  //button text
+  font-family: "Roboto", sans-serif;
+  // font-size: 12px;
+  font-weight: lighter;
+  color: #a8afb9;
+}
+
+.lt {
+  //link text
+  font-family: "Roboto", sans-serif;
+  // font-size: 12px;
+  font-weight: lighter;
+  color: #4b44c5;
+}
+
+/******************************************************/
+/**********************GENERAL*************************/
+/******************************************************/
+
+.white-btn {
+  color: #000; /* Fallback for older browsers */
+  color: rgba(0, 0, 0, 0.5);
+  background-color: white;
+}
+
+.gradient-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background: linear-gradient(
+    to right,
+    rgba(75, 68, 197, 0.5),
+    rgba(55, 202, 202, 0.5)
+  );
+}
+
+.description-video {
+  display: flex;
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  .videoDescrition {
+    height: 100%;
+    width: 50%;
+  }
+  .video {
+    @extend .cc;
+    height: 100%;
+    width: 50%;
+    position: relative;
+    .video-react-controls-enabled {
+      padding-top: 37.5vh !important;
+      width: 85%;
+    }
+  }
+}
+
+.description-line-overflow-img {
+  display: flex;
+  padding: 10% 5%;
+  position: relative;
+
+  .description {
+    width: 50%;
+    font-size: 0.8em;
+  }
+
+  .image {
+    @extend .cc;
+    width: 50%;
+    img {
+      width: 50%;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    border: 2px dotted gray;
+    left: 16vw;
+    top: -10vh;
+    height: 30%;
+  }
+}
+
+/******************************************************/
+/***********************NAVBAR*************************/
+/******************************************************/
+
+nav {
+  // position: absolute !important;
+  z-index: 1;
+  top: 0;
+  height: 15vh;
+  width: 100%;
+  padding: 0.5rem 2rem !important;
+  padding-right: 0 !important;
+  background-color: transparent;
+  color: white;
+  #navbar-logo {
+    width: 15%;
+    img {
+      margin: 0;
+      width: 70%;
+      max-width: 100px;
+      min-width: 80px;
+    }
+  }
+
+  #navbarSupportedContent {
+    ul {
+      li {
+        a {
+          margin-left: 3.4vw;
+          font-size: 1.2vw;
+          color: white;
+        }
+      }
+
+      #download-plugin {
+        a {
+          @extend .white-btn;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  .navbar-collapse.collapse.show {
+    // background-color: blue;
+    border-radius: 5px;
+    border: 2px solid gray;
+  }
+}
+
+/******************************************************/
+/***********************HOME***************************/
+/******************************************************/
+
+#home {
+  margin-top: -15vh;
+  #how-works {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(
+        to right,
+        rgba(75, 68, 197, 0.5),
+        rgba(55, 202, 202, 0.5)
+      ),
+      url(../assets/imgs/advertiserpage2.jpg) top center no-repeat;
+    background-size: cover;
+    color: white;
+
+    h4,
+    h3 {
+      color: white;
+    }
+    span {
+      position: absolute;
+      bottom: 5%;
+      left: 0;
+      right: 0;
+    }
+  }
+}
