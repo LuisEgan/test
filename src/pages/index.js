@@ -1,69 +1,106 @@
 import React from "react";
 import Link from "gatsby-link";
 
+// HOME COMPONENTS
+import {
+  HowWorks,
+  firstAdVidDesc,
+  DailyUsers,
+  nativePlacementsCarouselDesc,
+  flatAdsCarouselDesc,
+  introOasis,
+  WhyAdvir,
+  Discover
+} from "../components//Home/HomeComponents";
+
+// GENERAL COMPONENTS
 import DescVid from "../components/DescVid";
-import DescLineOFimg from "../components/DescLineOFimg"; //Description Line overflow image
+import DescLineOFimg from "../components/DescLineOFimg"; //Description Line Overflow image
+import DescCarousel from "../components/DescCarousel";
+import DescLeft from "../components/DescLeft";
+import HorizontalImgs from "../components/HorizontalImgs";
+
+// ASSETS
+import howWorksBg from "../assets/imgs/advertiserpage2.jpg";
+import firstAdVideo from "../assets/vids/Publishers_bg.mp4";
+import laptops from "../assets/imgs/laptops.png";
+
 // Images for DescLineOFimgs
 import part1 from "../assets/imgs/book2.jpg";
 
-import howWorksBg from "../assets/imgs/advertiserpage2.jpg";
-import firstAdVideo from "../assets/vids/Publishers_bg.mp4";
+// Images for Carousels
+const carouselImgs = [howWorksBg];
 
-// const firstAdVideo = require("!!file-loader!../assets/vids/Publishers_bg.mov");
-const firstAdVidDesc = () => (
-  <div>
-    <h3 className="st">The first platform build for VR/AR</h3>
-    <br />
-    <h5 className="mb">
-      Advir enables you to create, manage and sell your AR/VR <br /> inventory
-      in minutes, so you can focus on what you odo best: creating great content.
-    </h5>
-    <br />
-    <h4 className="st">Get started!</h4>
-  </div>
-);
+// Icons for Why Advir
+const icons = [part1];
+
+// Vars for HorizontalImgs
+const titleText = "Join a community of 150+ VR / AR developers";
+const subText =
+  "We cross-promote our developers to the community and to a wider audience with our network of influencers.";
+const benefitText = "Learn more about the benefits";
+const comImgs = [
+  part1,
+  part1,
+  part1,
+  part1,
+  part1,
+  part1,
+  part1,
+  part1,
+  part1,
+  part1
+];
 
 const IndexPage = () => (
   <div id="home">
-    <div id="how-works" className="cc">
-      <div>
-        <h3 className="st">Monetizing VR and AR with ads that don't suck</h3>
-        <h4 className="mb">
-          Place non-intrusive, programmatic product placements within <br />{" "}
-          your content and start generating revenues in minutes
-        </h4>
-        <br />
-        <button className="btn white-btn">See how it works</button>
-        <span>Join 150+ developers today</span>
-      </div>
+    <HowWorks />
+    <DescVid
+      videoName="firstAd"
+      VideoDescription={firstAdVidDesc}
+      videoSrc={firstAdVideo}
+    />
+    <div id="steps">
+      <DescLineOFimg
+        title="1. Install"
+        text="Download and instlal Advir for your favorite game engine and join a community of 150+ VR/AR developers."
+        imgSrc={part1}
+      />
+      <DescLineOFimg
+        title="2. Place"
+        text="Define your inventory - areas of your content to sell to advertisers. It can be banners, videos or 3D placements. You keep the control."
+        imgSrc={part1}
+      />
+      <DescLineOFimg
+        title="3. Configure"
+        text="Use our web platform to manage your apps, filter the most relevant advertisers, and activate your campaign."
+        imgSrc={part1}
+      />
+      <DescLineOFimg
+        title="4. Sell"
+        text="Your inventory is sold instantly to our networks of thousands of advertisers. You make money every time the user looks at it."
+        imgSrc={part1}
+      />
     </div>
-
-    <DescVid videoDescription={firstAdVidDesc} videoSrc={firstAdVideo} />
-
-    <DescLineOFimg
-      title="1. Install"
-      text="Download and instlal Advir for your favorite game engine and join a community of 150+ VR/AR developers."
-      imgSrc={part1}
+    <DailyUsers />
+    <DescCarousel
+      carouselName="placements"
+      CarouselDescription={nativePlacementsCarouselDesc}
+      images={[carouselImgs]}
     />
-    <DescLineOFimg
-      title="1. Install"
-      text="Download and instlal Advir for your favorite game engine and join a community of 150+ VR/AR developers."
-      imgSrc={part1}
+    <DescCarousel
+      carouselName="flatAds"
+      CarouselDescription={flatAdsCarouselDesc}
+      images={[carouselImgs]}
     />
-    <DescLineOFimg
-      title="1. Install"
-      text="Download and instlal Advir for your favorite game engine and join a community of 150+ VR/AR developers."
-      imgSrc={part1}
-    />
-    <DescLineOFimg
-      title="1. Install"
-      text="Download and instlal Advir for your favorite game engine and join a community of 150+ VR/AR developers."
-      imgSrc={part1}
-    />
-    <DescLineOFimg
-      title="1. Install"
-      text="Download and instlal Advir for your favorite game engine and join a community of 150+ VR/AR developers."
-      imgSrc={part1}
+    <DescLeft descName="introOasis" Description={introOasis} />
+    <WhyAdvir icons={icons} />
+    <Discover image={laptops} />
+    <HorizontalImgs
+      titleText={titleText}
+      subText={subText}
+      benefitText={benefitText}
+      images={comImgs}
     />
   </div>
 );

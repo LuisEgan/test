@@ -1,25 +1,32 @@
 import React from "react";
 import Link from "gatsby-link";
-import { DefaultPlayer as Video } from "react-html5video";
-import "react-html5video/dist/styles.css";
 import { Player } from "video-react";
-// import { VideoPlayer } from "react-video-players";
 
 import "../../../node_modules/video-react/dist/video-react.css";
 
-const IndexPage = ({ videoDescription, vidPoster, videoSrc }) => {
-  console.log("videoSrc: ", videoSrc);
-
+const DescVid = ({
+  videoName,
+  VideoDescription,
+  vidPoster,
+  videoSrc,
+  videoTitle
+}) => {
   return (
-    <div className="description-video">
-      <div className="videoDescrition">
-        <videoDescription />
+    <div
+      id={videoName}
+      className="description-video description-pair-container row"
+    >
+      <div className="videoDescription description-container col-sm-12 col-md-6">
+        <VideoDescription />
       </div>
-      <div className="video">
-        <Player playsInline src={videoSrc} />
+      <div className="video col-sm-12 col-md-6">
+        <div>
+          {videoTitle}
+          {videoSrc !== "" && <Player playsInline src={videoSrc} />}
+        </div>
       </div>
     </div>
   );
 };
 
-export default IndexPage;
+export default DescVid;
