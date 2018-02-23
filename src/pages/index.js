@@ -58,7 +58,7 @@ const IndexPage = () => (
     <DescVid
       videoName="firstAd"
       VideoDescription={firstAdVidDesc}
-      videoSrc={firstAdVideo}
+      videoSrc={`https://www.youtube.com/embed/aDAL5G9Xwn4`}
     />
     <div id="steps">
       <DescLineOFimg
