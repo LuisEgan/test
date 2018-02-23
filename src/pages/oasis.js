@@ -7,10 +7,11 @@ import DescLineOFimg from "../components/DescLineOFimg"; //Description Line Over
 import DescCarousel from "../components/DescCarousel";
 import DescLeft from "../components/DescLeft";
 import HorizontalImgs from "../components/HorizontalImgs";
+import VideoBg from "../components/VideoBg";
 
 // ASSETS
 import howWorksBg from "../assets/imgs/advertiserpage2.jpg";
-import firstAdVideo from "../assets/vids/Publishers_bg.mp4";
+import Publishers_bg from "../assets/vids/Publishers_bg.webm";
 import laptops from "../assets/imgs/laptops.png";
 
 // Vars for HorizontalImgs
@@ -40,6 +41,7 @@ const hyperlinksVidDesc = () => (
 const Oasis = () => (
   <div id="oasis">
     <div id="metaverse" className="first-show">
+      <VideoBg videoSrc={Publishers_bg} videoType="webm" />
       <div className="container">
         <h3 className="st">The metaverse is here</h3>
         <h4 className="mb">
@@ -55,7 +57,7 @@ const Oasis = () => (
     <DescVid
       videoName="hyperlinks"
       VideoDescription={hyperlinksVidDesc}
-      videoSrc={firstAdVideo}
+      videoSrc={Publishers_bg}
     />
 
     <div id="forEveryone">

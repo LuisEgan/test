@@ -6,10 +6,11 @@ import DescVid from "../components/DescVid";
 import DescLineOFimg from "../components/DescLineOFimg"; //Description Line Overflow image
 import DescCarousel from "../components/DescCarousel";
 import DescLeft from "../components/DescLeft";
+import VideoBg from "../components/VideoBg";
 
 // ASSETS
 import howWorksBg from "../assets/imgs/advertiserpage2.jpg";
-import firstAdVideo from "../assets/vids/Publishers_bg.mp4";
+import Advertisers_bg from "../assets/vids/Advertisers_bg.webm";
 import pledgelogo_2 from "../assets/imgs/pledgelogo_2.png";
 import laptops from "../assets/imgs/laptops.png";
 
@@ -71,6 +72,7 @@ const displayAdsDesc = () => (
 const Oasis = () => (
   <div id="advertisers">
     <div id="yourBrand" className="first-show">
+      <VideoBg videoSrc={Advertisers_bg} videoType="webm" />
       <div className="container">
         <h3 className="st">Your brand, immersed.</h3>
         <h4 className="mb">

@@ -1,8 +1,12 @@
 import React from "react";
 import Link from "gatsby-link";
+import { Player } from "video-react";
 
-export const HowWorks = () => (
+import VideoBg from "../VideoBg";
+
+export const HowWorks = ({ videoSrc }) => (
   <div id="how-works" className="first-show">
+    <VideoBg videoSrc={videoSrc} videoType="webm" />
     <div className="container">
       <h3 className="st">Monetizing VR and AR with ads that don't suck</h3>
       <h4 className="mb">

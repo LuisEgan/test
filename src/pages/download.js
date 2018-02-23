@@ -10,7 +10,7 @@ import HorizontalImgs from "../components/HorizontalImgs";
 
 // ASSETS
 import howWorksBg from "../assets/imgs/advertiserpage2.jpg";
-import firstAdVideo from "../assets/vids/Publishers_bg.mp4";
+import Publishers_bg from "../assets/vids/Publishers_bg.webm";
 import laptops from "../assets/imgs/laptops.png";
 
 const downloadVidDesc = () => (
@@ -50,7 +50,7 @@ const Download = () => (
       <DescVid
         videoName="downloadVid"
         VideoDescription={downloadVidDesc}
-        videoSrc={firstAdVideo}
+        videoSrc={Publishers_bg}
         videoTitle={videoTitle}
       />
       <div className="">

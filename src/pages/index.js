@@ -22,8 +22,10 @@ import HorizontalImgs from "../components/HorizontalImgs";
 
 // ASSETS
 import howWorksBg from "../assets/imgs/advertiserpage2.jpg";
-import firstAdVideo from "../assets/vids/Publishers_bg.mp4";
 import laptops from "../assets/imgs/laptops.png";
+
+// Videos
+import Index_bg from "../assets/vids/Index_bg.webm";
 
 // Images for DescLineOFimgs
 import part1 from "../assets/imgs/book2.jpg";
@@ -54,11 +56,11 @@ const comImgs = [
 
 const IndexPage = () => (
   <div id="home">
-    <HowWorks />
+    <HowWorks videoSrc={Index_bg} />
     <DescVid
       videoName="firstAd"
       VideoDescription={firstAdVidDesc}
-      videoSrc={`https://www.youtube.com/embed/aDAL5G9Xwn4`}
+      videoSrc={Index_bg}
     />
     <div id="steps">
       <DescLineOFimg

@@ -166,6 +166,49 @@ $horizontalGradient: linear-gradient(
   );
 }
 
+.videoBg-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+
+  .videoBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+  }
+}
+@media (min-aspect-ratio: 16/9) {
+  .videoBg {
+    height: 300%;
+    top: -100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .videoBg {
+    width: 300%;
+    left: -100%;
+  }
+}
+// @media (max-width: 767px) {
+//   .videoBg-container {
+//     background: url(../assets/imgs/advertiserpage2.jpg) center center / cover
+//       no-repeat;
+//   }
+
+//   .videoBg {
+//     display: none;
+//   }
+// }
+
 .first-show {
   @extend .cc;
   position: relative;
@@ -444,8 +487,9 @@ nav {
 #home {
   margin-top: -15vh;
   #how-works {
-    background: $horizontalGradientOpaque,
-      url(../assets/imgs/advertiserpage2.jpg) top center no-repeat;
+    // background: $horizontalGradientOpaque,
+    //   url(../assets/imgs/advertiserpage2.jpg) top center no-repeat;
+    background: $horizontalGradientOpaque;
 
     span {
       position: absolute;
@@ -464,6 +508,7 @@ nav {
   #dailyUsers {
     padding: 7% 0;
     position: relative;
+    background-color: white;
 
     .container {
       min-height: 200px;
@@ -638,6 +683,7 @@ nav {
   }
 
   #discover {
+    background-color: white;
     .container {
       margin: auto;
       > div {
@@ -666,8 +712,9 @@ nav {
   margin-top: -15vh;
 
   #metaverse {
-    background: $horizontalGradientOpaque,
-      url(../assets/imgs/advertiserpage2.jpg) top center no-repeat;
+    // background: $horizontalGradientOpaque,
+    //   url(../assets/imgs/advertiserpage2.jpg) top center no-repeat;
+    background: $horizontalGradientOpaque;
 
     h4 {
       width: 70%;
@@ -686,6 +733,11 @@ nav {
   #forEveryone {
     padding: 7%;
 
+    > .container {
+      background-color: white;
+      padding: 5%;
+    }
+
     h4 {
       color: $gray !important;
     }
@@ -703,8 +755,9 @@ nav {
   margin-top: -15vh;
 
   #yourBrand {
-    background: $horizontalGradientOpaque,
-      url(../assets/imgs/advertiserpage2.jpg) top center no-repeat;
+    // background: $horizontalGradientOpaque,
+    //   url(../assets/imgs/advertiserpage2.jpg) top center no-repeat;
+    background: $horizontalGradientOpaque;
 
     h4 {
       width: 70%;
@@ -732,6 +785,7 @@ nav {
 
   #statistics {
     padding: 5%;
+    background-color: white;
 
     .borderR {
       border-right: solid $gray 1px;
@@ -762,6 +816,7 @@ nav {
   }
 
   #reporting {
+    background-color: white;
     .container {
       h4 {
         color: $gray !important;
@@ -797,6 +852,7 @@ nav {
   .container {
     background: $horizontalGradientOpaque;
     padding: 5%;
+    min-height: 100vh;
 
     #downloadVid {
       padding-bottom: 5%;
