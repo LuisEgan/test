@@ -198,16 +198,16 @@ $horizontalGradient: linear-gradient(
     left: -100%;
   }
 }
-// @media (max-width: 767px) {
-//   .videoBg-container {
-//     background: url(../assets/imgs/advertiserpage2.jpg) center center / cover
-//       no-repeat;
-//   }
+@media (max-width: 767px) {
+  .videoBg-container {
+    background: url(../assets/imgs/advertiserpage2.jpg) center center / cover
+      no-repeat;
+  }
 
-//   .videoBg {
-//     display: none;
-//   }
-// }
+  .videoBg {
+    display: none;
+  }
+}
 
 .first-show {
   @extend .cc;
@@ -916,10 +916,6 @@ nav {
           margin-bottom: 5vw;
           margin-left: 0 !important;
           text-align: center;
-        }
-        .videoDescription {
-        }
-        .video {
         }
       }
     }
