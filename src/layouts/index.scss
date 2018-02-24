@@ -144,6 +144,12 @@ a {
 
 $blueAdvir: #157cc1;
 $gray: #b3b3b3;
+$grayLighter: #e7e7e7;
+
+$purpleBlue: #4b44c5;
+$blueLight: #5077e1;
+$cyan: #37caca;
+$green: #3ad07f;
 
 $horizontalGradientOpaque: linear-gradient(
   to right,
@@ -871,6 +877,62 @@ nav {
         }
       }
     }
+  }
+
+  #circles {
+    background-color: white;
+    padding: 0 7% 8%;
+
+    h3,
+    h4 {
+      color: black !important;
+    }
+
+    > h2 {
+      width: 100%;
+      text-align: center;
+      color: $blueAdvir !important;
+    }
+
+    .container.row {
+      > div {
+        display: flex;
+        flex-flow: column;
+
+        > div {
+          width: 100%;
+          text-align: center;
+          position: relative;
+
+          &:first-child {
+            padding: 7%;
+          }
+
+          .circleText {
+            color: black !important;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            @include height-fit-content();
+            @include width-fit-content();
+            font-size: calc(1.3em + 0.6vw);
+            span {
+              color: black !important;
+              font-size: calc(0.4em + 0.4vw);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #betterFuture {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../assets/imgs/advertiserpage1.jpg) top center no-repeat;
+    background-size: cover;
   }
 }
 

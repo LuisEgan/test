@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
 import { Player } from "video-react";
-import { Line, Circle } from "rc-progress";
 import Slider from "../../../node_modules/rc-slider/lib/Slider";
 import "../../../node_modules/rc-slider/assets/index.css";
 
