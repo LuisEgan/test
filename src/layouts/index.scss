@@ -43,6 +43,19 @@ span {
   color: white !important;
 }
 
+.no-select {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.no-drag {
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
 .row {
   margin: 0;
 }
@@ -531,18 +544,33 @@ nav {
           height: 25px;
           @include border-radius(30px);
           position: relative;
-          &::before {
-            content: "";
-            border: solid 10px #ffad33;
+
+          > div {
+            height: 90%;
+            width: 90%;
             position: absolute;
             left: 0.5%;
             top: 1.5px;
-            width: 40%;
             @include border-radius(30px);
+            &:hover {
+              cursor: pointer;
+            }
+            .rc-slider-rail {
+              background-color: transparent;
+            }
+            .rc-slider-track {
+              height: 100%;
+              top: 0;
+              @include border-radius(10px);
+              background-color: #ffad33;
+            }
+            .rc-slider-handle {
+              display: none;
+            }
           }
 
-          &::after {
-            content: "3500";
+          span {
+            color: black !important;
             position: absolute;
             right: 1%;
           }
@@ -559,6 +587,10 @@ nav {
         line-height: 0.5em;
         margin: 0;
         width: 100%;
+
+        #money {
+          font-size: calc(1.2em + 0.7vw);
+        }
 
         span {
           font-size: calc(0.2em + 0.3vw);

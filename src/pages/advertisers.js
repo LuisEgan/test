@@ -69,7 +69,7 @@ const displayAdsDesc = () => (
   </div>
 );
 
-const Oasis = () => (
+const Advertisers = () => (
   <div id="advertisers">
     <div id="yourBrand" className="first-show">
       <VideoBg videoSrc={Advertisers_bg} videoType="webm" />
@@ -171,4 +171,4 @@ const Oasis = () => (
   </div>
 );
 
-export default Oasis;
+export default Advertisers;

@@ -1,6 +1,9 @@
 import React from "react";
 import Link from "gatsby-link";
 import { Player } from "video-react";
+import { Line, Circle } from "rc-progress";
+import Slider from "../../../node_modules/rc-slider/lib/Slider";
+import "../../../node_modules/rc-slider/assets/index.css";
 
 import VideoBg from "../VideoBg";
 
@@ -33,32 +36,76 @@ export const firstAdVidDesc = () => (
   </div>
 );
 
-export const DailyUsers = () => (
-  <div id="dailyUsers" className="cc">
-    <div className="container row">
-      <div id="bar-container" className="col-sm-12 col-md-8 cc">
-        <div>
-          <h4 className="pt">How many daily users does your VR app has?</h4>
-          <div id="bar" />
+export class DailyUsers extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      barValue: 3500,
+      moneyValue: 3292
+    };
+
+    this.handleBarChange = this.handleBarChange.bind(this);
+  }
+
+  parseMoneyValue(moneyValue) {
+    const s = moneyValue.toString();
+    const afterComa = s[0] === "0" ? 0 : s.substring(1);
+    return "$ " + s[0] + "," + afterComa;
+  }
+
+  handleBarChange(e) {
+    // e is divided by 10 because the slider max value is set to 1000 for a smoother slide
+    const barValue = Math.round(e / 10 * 3500 / 70);
+    const moneyValue = Math.round(e / 10 * 3292 / 70);
+    this.setState({ barValue, moneyValue });
+  }
+
+  render() {
+    const { barValue, moneyValue, barPercentage, value } = this.state;
+
+    return (
+      <div id="dailyUsers" className="cc">
+        <div className="container row">
+          <div id="bar-container" className="col-sm-12 col-md-8 cc">
+            <div>
+              <h4 className="pt no-select">
+                How many daily users does your VR app has?
+              </h4>
+              <div id="bar" onDrag={this.handleDrag}>
+                <Slider
+                  min={0}
+                  max={1000}
+                  defaultValue={700}
+                  onChange={this.handleBarChange}
+                />
+                <span className="no-drag no-select">{barValue}</span>
+              </div>
+            </div>
+          </div>
+          <div
+            id="making-container"
+            className="col-sm-12 col-md-4 cc no-select no-drag"
+          >
+            <div id="making">
+              <h3>You could be making</h3>
+              <h2>
+                <span id="money">{this.parseMoneyValue(moneyValue)}</span>{" "}
+                <br /> <span>per month</span>
+              </h2>
+              <h6> *figure for indication only</h6>
+            </div>
+          </div>
+          <div id="btn-container" className="col-sm-12">
+            <Link to="/" className="btn">
+              Download Advir
+            </Link>
+          </div>
         </div>
       </div>
-      <div id="making-container" className="col-sm-12 col-md-4 cc">
-        <div id="making">
-          <h3>You could be making</h3>
-          <h2>
-            $ 3,292 <br /> <span>per month</span>
-          </h2>
-          <h6> *figure for indication only</h6>
-        </div>
-      </div>
-      <div id="btn-container" className="col-sm-12">
-        <Link to="/" className="btn">
-          Download Advir
-        </Link>
-      </div>
-    </div>
-  </div>
-);
+    );
+  }
+}
 
 export const nativePlacementsCarouselDesc = () => (
   <div>
