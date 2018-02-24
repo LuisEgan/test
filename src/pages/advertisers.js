@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
+import { Line, Circle } from "rc-progress";
 
 // GENERAL COMPONENTS
 import DescVid from "../components/DescVid";
@@ -27,6 +28,21 @@ const hardDesc = () => (
       on Demand Side Partners you probably already use. That means that for you,
       the brand it’s business as usual.
     </h5>
+  </div>
+);
+
+const betterFutureDesc = () => (
+  <div>
+    <h3 className="st">Creating a better future for adtech</h3>
+    <br />
+    <h5 className="mb">
+      We are leading vrarpledge.org, an association fighting against intrusive
+      ads in immersive technologies.
+    </h5>
+    <br />
+    <Link to="/" className="btn white-btn">
+      Learn more
+    </Link>
   </div>
 );
 
@@ -168,6 +184,80 @@ const Advertisers = () => (
         </div>
       </div>
     </div>
+
+    <div id="circles">
+      <h2 className="st">Pioneering engagement in VR/AR</h2>
+      <div className="container row">
+        <div className="col-sm-12 col-md-4">
+          <div>
+            <Circle
+              percent="29"
+              strokeWidth="4"
+              trailWidth="4"
+              strokeColor="#5077E1"
+            />
+            <div className="mb circleText">
+              29% <br /> <span>ENGAGEMENT</span>{" "}
+            </div>
+          </div>
+          <div>
+            <h3 className="st">Active engagement</h3>
+          </div>
+          <div>
+            <h4 className="mb">
+              Users actively interacting with the placement (view or action),
+              across all formats.
+            </h4>
+          </div>
+        </div>
+        <div className="col-sm-12 col-md-4">
+          <div>
+            <Circle
+              percent="67"
+              strokeWidth="4"
+              trailWidth="4"
+              strokeColor="#37CACA"
+            />
+            <div className="mb circleText">
+              67% <br /> <span>BRAND RECALL</span>{" "}
+            </div>
+          </div>
+          <div>
+            <h3 className="st">Lasting impact</h3>
+          </div>
+          <div>
+            <h4 className="mb">
+              Users able to name the brands they have seen in a VR experience
+              they just completed.
+            </h4>
+          </div>
+        </div>
+        <div className="col-sm-12 col-md-4">
+          <div>
+            <Circle
+              percent="73"
+              strokeWidth="4"
+              trailWidth="4"
+              strokeColor="#4B44C5"
+            />
+            <div className="mb circleText">
+              73% <br /> <span>POSITIVE FEEDBACK</span>{" "}
+            </div>
+          </div>
+          <div>
+            <h3 className="st">A geat experience</h3>
+          </div>
+          <div>
+            <h4 className="mb">
+              Users reporting that brand placements didn't impact the experience
+              negatively.
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <DescLeft descName="betterFuture" Description={betterFutureDesc} />
   </div>
 );
 
