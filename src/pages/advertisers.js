@@ -6,7 +6,7 @@ const ScrollLink = Scroll.Link;
 
 // GENERAL COMPONENTS
 import DescVid from "../components/DescVid";
-import DescLineOFimg from "../components/DescLineOFimg"; //Description Line Overflow image
+import DescLineOF from "../components/DescLineOF"; //Description Line Overflow image
 import DescCarousel from "../components/DescCarousel";
 import DescLeft from "../components/DescLeft";
 import VideoBg from "../components/VideoBg";

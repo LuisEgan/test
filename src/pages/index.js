@@ -77,16 +77,22 @@ class IndexPage extends React.Component {
             title="2. Place"
             text="Define your inventory - areas of your content to sell to advertisers. It can be banners, videos or 3D placements. You keep the control."
             imgSrc={part1}
+            videoSrc={Index_bg}
+            youtubeId={`-6Pm8qFu1rE`}
           />
           <DescLineOF
             title="3. Configure"
             text="Use our web platform to manage your apps, filter the most relevant advertisers, and activate your campaign."
             imgSrc={part1}
+            videoSrc={Index_bg}
+            youtubeId={`-6Pm8qFu1rE`}
           />
           <DescLineOF
             title="4. Sell"
             text="Your inventory is sold instantly to our networks of thousands of advertisers. You make money every time the user looks at it."
             imgSrc={part1}
+            videoSrc={Index_bg}
+            youtubeId={`-6Pm8qFu1rE`}
           />
         </div>
         <DailyUsers />

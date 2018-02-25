@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "gatsby-link";
+import { Player } from "video-react";
 
-const DescLineOFimg = ({ title, text, imgSrc }) => {
+const DescLineOF = ({ title, text, imgSrc, videoSrc, youtubeId }) => {
   return (
     <div className="container description-line-overflow-img row">
       <div className="description  col-sm-12 col-md-6">
@@ -14,11 +15,27 @@ const DescLineOFimg = ({ title, text, imgSrc }) => {
           </Link>
         )}
       </div>
-      <div className="image  col-sm-12 col-md-6">
-        <img src={imgSrc} />
+      <div className="image col-sm-12 col-md-6">
+        {/* Priority: 1. local video, 2. youtube video and 3. Image */}
+        {/* If all are provided, the local video is going to be displayed, and so on. */}
+        {!!videoSrc && (
+          <Player autoPlay={true} loop={true} playsInline src={videoSrc} />
+        )}
+        {!!youtubeId &&
+          !videoSrc && (
+            <iframe
+              width="560"
+              height="315"
+              src={`https://www.youtube.com/embed/${youtubeId}?rel=0&amp;showinfo=0`}
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            />
+          )}
+        {!!imgSrc && !videoSrc && !youtubeId && <img src={imgSrc} />}
       </div>
     </div>
   );
 };
 
-export default DescLineOFimg;
+export default DescLineOF;
