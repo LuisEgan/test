@@ -15,7 +15,7 @@ import {
 
 // GENERAL COMPONENTS
 import DescVid from "../components/DescVid";
-import DescLineOFimg from "../components/DescLineOFimg"; //Description Line Overflow image
+import DescLineOF from "../components/DescLineOF"; //Description Line Overflow image
 import DescCarousel from "../components/DescCarousel";
 import DescLeft from "../components/DescLeft";
 import HorizontalImgs from "../components/HorizontalImgs";
@@ -28,7 +28,7 @@ import laptops from "../assets/imgs/laptops.png";
 // Videos
 import Index_bg from "../assets/vids/Index_bg.webm";
 
-// Images for DescLineOFimgs
+// Images for DescLineOFs
 import part1 from "../assets/imgs/book2.jpg";
 
 // Images for Carousels
@@ -63,25 +63,27 @@ class IndexPage extends React.Component {
         <DescVid
           videoName="firstAd"
           VideoDescription={firstAdVidDesc}
-          videoSrc={Index_bg}
+          youtubeId={`-6Pm8qFu1rE`}
         />
         <div id="steps">
-          <DescLineOFimg
+          <DescLineOF
             title="1. Install"
             text="Download and instlal Advir for your favorite game engine and join a community of 150+ VR/AR developers."
             imgSrc={part1}
+            videoSrc={Index_bg}
+            youtubeId={`-6Pm8qFu1rE`}
           />
-          <DescLineOFimg
+          <DescLineOF
             title="2. Place"
             text="Define your inventory - areas of your content to sell to advertisers. It can be banners, videos or 3D placements. You keep the control."
             imgSrc={part1}
           />
-          <DescLineOFimg
+          <DescLineOF
             title="3. Configure"
             text="Use our web platform to manage your apps, filter the most relevant advertisers, and activate your campaign."
             imgSrc={part1}
           />
-          <DescLineOFimg
+          <DescLineOF
             title="4. Sell"
             text="Your inventory is sold instantly to our networks of thousands of advertisers. You make money every time the user looks at it."
             imgSrc={part1}

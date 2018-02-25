@@ -272,6 +272,14 @@ $horizontalGradient: linear-gradient(
     // width: 50%;
     position: relative;
 
+    iframe {
+      padding: 5% calc(5% + 1vw);
+      border: 0;
+      width: 100%;
+      max-width: 1000px;
+      max-height: 1000px;
+    }
+
     > div {
       width: 100%;
       height: 100%;

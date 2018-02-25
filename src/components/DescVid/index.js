@@ -10,7 +10,8 @@ const DescVid = ({
   VideoDescription,
   vidPoster,
   videoSrc,
-  videoTitle
+  videoTitle,
+  youtubeId
 }) => {
   return (
     <Element
@@ -24,7 +25,19 @@ const DescVid = ({
       <div className="video col-sm-12 col-md-6">
         <div>
           {videoTitle}
-          {videoSrc !== "" && <Player playsInline src={videoSrc} />}
+          {!!videoSrc && <Player playsInline src={videoSrc} />}
+          {/* Gives priority to a local video source, if both are provided, the local one will be displayed */}
+          {!!youtubeId &&
+            !videoSrc && (
+              <iframe
+                width="560"
+                height="315"
+                src={`https://www.youtube.com/embed/${youtubeId}?rel=0&amp;showinfo=0`}
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+              />
+            )}
         </div>
       </div>
     </Element>
