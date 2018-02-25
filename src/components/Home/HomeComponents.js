@@ -3,8 +3,10 @@ import Link from "gatsby-link";
 import { Player } from "video-react";
 import Slider from "../../../node_modules/rc-slider/lib/Slider";
 import "../../../node_modules/rc-slider/assets/index.css";
-
 import VideoBg from "../VideoBg";
+
+import * as Scroll from "react-scroll";
+const ScrollLink = Scroll.Link;
 
 export const HowWorks = ({ videoSrc }) => (
   <div id="how-works" className="first-show">
@@ -16,7 +18,14 @@ export const HowWorks = ({ videoSrc }) => (
         your content and start generating revenues in minutes
       </h4>
       <br />
-      <button className="btn white-btn">See how it works</button>
+      <ScrollLink
+        className="btn white-btn"
+        to="firstAd"
+        smooth={true}
+        duration={1000}
+      >
+        See how it works
+      </ScrollLink>
       <span>Join 150+ developers today</span>
     </div>
   </div>

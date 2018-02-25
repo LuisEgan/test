@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "gatsby-link";
 import { Line, Circle } from "rc-progress";
+import * as Scroll from "react-scroll";
+const ScrollLink = Scroll.Link;
 
 // GENERAL COMPONENTS
 import DescVid from "../components/DescVid";
@@ -97,7 +99,14 @@ const Advertisers = () => (
           tracking data, and get ready for the immersive revolution.
         </h4>
         <br />
-        <button className="btn white-btn">See how it works</button>
+        <ScrollLink
+          className="btn white-btn"
+          to="hardToBelieve"
+          smooth={true}
+          duration={1000}
+        >
+          See how it works
+        </ScrollLink>
       </div>
       <span className="cc">
         <img src={pledgelogo_2} />

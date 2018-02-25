@@ -16,6 +16,7 @@
     "rc-progress": "^2.2.5",
     "rc-slider": "^8.6.0",
     "react-helmet": "^5.2.0",
+    "react-scroll": "^1.7.7",
     "video-react": "^0.9.4"
   },
   "keywords": [

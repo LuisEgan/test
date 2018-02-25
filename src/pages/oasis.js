@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
+import * as Scroll from "react-scroll";
+const ScrollLink = Scroll.Link;
 
 // GENERAL COMPONENTS
 import DescVid from "../components/DescVid";
@@ -50,7 +52,14 @@ const Oasis = () => (
           acquire new users from other leading apps.
         </h4>
         <br />
-        <button className="btn white-btn">See how it works</button>
+        <ScrollLink
+          className="btn white-btn"
+          to="hyperlinks"
+          smooth={true}
+          duration={1000}
+        >
+          See how it works
+        </ScrollLink>
       </div>
     </div>
 

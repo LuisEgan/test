@@ -19,6 +19,7 @@ import DescLineOFimg from "../components/DescLineOFimg"; //Description Line Over
 import DescCarousel from "../components/DescCarousel";
 import DescLeft from "../components/DescLeft";
 import HorizontalImgs from "../components/HorizontalImgs";
+import VideoBg from "../components/VideoBg";
 
 // ASSETS
 import howWorksBg from "../assets/imgs/advertiserpage2.jpg";
@@ -54,57 +55,61 @@ const comImgs = [
   part1
 ];
 
-const IndexPage = () => (
-  <div id="home">
-    <HowWorks videoSrc={Index_bg} />
-    <DescVid
-      videoName="firstAd"
-      VideoDescription={firstAdVidDesc}
-      videoSrc={Index_bg}
-    />
-    <div id="steps">
-      <DescLineOFimg
-        title="1. Install"
-        text="Download and instlal Advir for your favorite game engine and join a community of 150+ VR/AR developers."
-        imgSrc={part1}
-      />
-      <DescLineOFimg
-        title="2. Place"
-        text="Define your inventory - areas of your content to sell to advertisers. It can be banners, videos or 3D placements. You keep the control."
-        imgSrc={part1}
-      />
-      <DescLineOFimg
-        title="3. Configure"
-        text="Use our web platform to manage your apps, filter the most relevant advertisers, and activate your campaign."
-        imgSrc={part1}
-      />
-      <DescLineOFimg
-        title="4. Sell"
-        text="Your inventory is sold instantly to our networks of thousands of advertisers. You make money every time the user looks at it."
-        imgSrc={part1}
-      />
-    </div>
-    <DailyUsers />
-    <DescCarousel
-      carouselName="placements"
-      CarouselDescription={nativePlacementsCarouselDesc}
-      images={[carouselImgs]}
-    />
-    <DescCarousel
-      carouselName="flatAds"
-      CarouselDescription={flatAdsCarouselDesc}
-      images={[carouselImgs]}
-    />
-    <DescLeft descName="introOasis" Description={introOasis} />
-    <WhyAdvir icons={icons} />
-    <Discover image={laptops} />
-    <HorizontalImgs
-      titleText={titleText}
-      subText={subText}
-      benefitText={benefitText}
-      images={comImgs}
-    />
-  </div>
-);
+class IndexPage extends React.Component {
+  render() {
+    return (
+      <div id="home">
+        <HowWorks videoSrc={Index_bg} />
+        <DescVid
+          videoName="firstAd"
+          VideoDescription={firstAdVidDesc}
+          videoSrc={Index_bg}
+        />
+        <div id="steps">
+          <DescLineOFimg
+            title="1. Install"
+            text="Download and instlal Advir for your favorite game engine and join a community of 150+ VR/AR developers."
+            imgSrc={part1}
+          />
+          <DescLineOFimg
+            title="2. Place"
+            text="Define your inventory - areas of your content to sell to advertisers. It can be banners, videos or 3D placements. You keep the control."
+            imgSrc={part1}
+          />
+          <DescLineOFimg
+            title="3. Configure"
+            text="Use our web platform to manage your apps, filter the most relevant advertisers, and activate your campaign."
+            imgSrc={part1}
+          />
+          <DescLineOFimg
+            title="4. Sell"
+            text="Your inventory is sold instantly to our networks of thousands of advertisers. You make money every time the user looks at it."
+            imgSrc={part1}
+          />
+        </div>
+        <DailyUsers />
+        <DescCarousel
+          carouselName="placements"
+          CarouselDescription={nativePlacementsCarouselDesc}
+          images={[carouselImgs]}
+        />
+        <DescCarousel
+          carouselName="flatAds"
+          CarouselDescription={flatAdsCarouselDesc}
+          images={[carouselImgs]}
+        />
+        <DescLeft descName="introOasis" Description={introOasis} />
+        <WhyAdvir icons={icons} />
+        <Discover image={laptops} />
+        <HorizontalImgs
+          titleText={titleText}
+          subText={subText}
+          benefitText={benefitText}
+          images={comImgs}
+        />
+      </div>
+    );
+  }
+}
 
 export default IndexPage;
