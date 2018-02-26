@@ -23,6 +23,10 @@
   height: fit-content;
 }
 
+* {
+  transition: all 1s;
+}
+
 html,
 body {
   padding: 0;
