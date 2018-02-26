@@ -21,16 +21,21 @@ const bootstrap = (
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    {jquery}
-    {popper}
-    {bootstrap}
     <Helmet
       title="Advir.co"
       meta={[
         { name: "description", content: "Advir website" },
         { name: "keywords", content: "VR, AR, Advir, advertisement" }
       ]}
-    />
+    >
+      {jquery}
+      {popper}
+      {bootstrap}
+      <script
+        src="//static-login.sendpulse.com/apps/fc3/build/loader.js"
+        sp-form-id="2d38245081aeffd94791afbd87d2c7277cd250596c09b5791eac104543136e5e"
+      />
+    </Helmet>
     <Header />
     <div>{children()}</div>
     <Footer />
