@@ -7,7 +7,7 @@ const HorizontalImgs = ({ titleText, subText, benefitText, images }) => {
   });
 
   return (
-    <div id="community" className="horizontal-images">
+    <div className="horizontal-images">
       <h3 className="st">{titleText}</h3>
       <h4 className="mb">{subText}</h4>
       <div className="hor-imgs-container cc">{horImgs}</div>

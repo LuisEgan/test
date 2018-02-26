@@ -99,7 +99,7 @@ a {
   // font-size: 30px;
   font-weight: bold;
   color: #4b44c5;
-  font-size: calc(0.6em + 1.2vw);
+  font-size: calc(0.5em + 1.4vw);
 }
 
 .st {
@@ -108,7 +108,7 @@ a {
   // font-size: 14px;
   font-weight: bold;
   color: #000000;
-  font-size: calc(0.6em + 1.2vw);
+  font-size: calc(0.5em + 1.4vw);
 }
 
 .mb {
@@ -119,7 +119,7 @@ a {
   // font-size: 12px;
   color: #a8afb9;
   // letter-spacing: 1.2px;
-  font-size: calc(0.4em + 0.5vw);
+  font-size: calc(0.3em + 0.7vw);
 }
 
 .bt {
@@ -168,8 +168,7 @@ $horizontalGradient: linear-gradient(
 /******************************************************/
 
 .white-btn {
-  color: #000; /* Fallback for older browsers */
-  color: rgba(0, 0, 0, 0.5);
+  color: $blueAdvir !important;
   background-color: white;
 }
 
@@ -454,6 +453,33 @@ $horizontalGradient: linear-gradient(
     .ok {
       margin: 0 1.2%;
     }
+  }
+}
+
+.statistics {
+  padding: 5%;
+  background-color: white;
+
+  .borderR {
+    border-right: solid $gray 1px;
+  }
+
+  h3 {
+    font-size: calc(1.4em + 1.2vw);
+    font-weight: normal;
+  }
+
+  h4 {
+    font-size: calc(0.5em + 0.6vw);
+    font-weight: bold;
+    padding: 5%;
+    width: 45%;
+  }
+
+  h3,
+  h4 {
+    color: black !important;
+    padding: 2%;
   }
 }
 
@@ -777,7 +803,7 @@ nav {
 
   #hyperlinks {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(../assets/imgs/advertiserpage1.jpg) top center no-repeat;
+      url(../assets/imgs/oasispage1.jpg) top center no-repeat;
     background-size: cover;
   }
 
@@ -795,6 +821,25 @@ nav {
     h3 {
       color: black !important;
     }
+  }
+}
+
+/******************************************************/
+/*********************COMMUNITY************************/
+/******************************************************/
+
+#community {
+  margin-top: -15vh;
+
+  #fan {
+    background: $horizontalGradientOpaque,
+      url(../assets/imgs/advertiserpage2.jpg) top center no-repeat;
+  }
+
+  #hardToBelieve {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../assets/imgs/advertiserpage1.jpg) top center no-repeat;
+    background-size: cover;
   }
 }
 
@@ -832,33 +877,6 @@ nav {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(../assets/imgs/advertiserpage1.jpg) top center no-repeat;
     background-size: cover;
-  }
-
-  #statistics {
-    padding: 5%;
-    background-color: white;
-
-    .borderR {
-      border-right: solid $gray 1px;
-    }
-
-    h3 {
-      font-size: calc(1.4em + 1.2vw);
-      font-weight: normal;
-    }
-
-    h4 {
-      font-size: calc(0.5em + 0.6vw);
-      font-weight: bold;
-      padding: 5%;
-      width: 45%;
-    }
-
-    h3,
-    h4 {
-      color: black !important;
-      padding: 2%;
-    }
   }
 
   // THIS IS FOR THE LAST CAROUSEL
@@ -944,7 +962,7 @@ nav {
 
   #betterFuture {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(../assets/imgs/advertiserpage1.jpg) top center no-repeat;
+      url(../assets/imgs/advertiserpage2.jpg) top center no-repeat;
     background-size: cover;
   }
 }

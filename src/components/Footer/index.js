@@ -31,16 +31,16 @@ const VideoBg = () => (
         </Link>
       </div>
       <div id="sn-buttons">
-        <a href="facebook.com" target="_blank">
+        <a href="https://www.facebook.com/" target="_blank">
           <i className="fab fa-facebook-f" />
         </a>
-        <a href="facebook.com" target="_blank">
+        <a href="https://www.facebook.com/" target="_blank">
           <i className="fab fa-twitter" />
         </a>
-        <a href="facebook.com" target="_blank">
+        <a href="https://www.facebook.com/" target="_blank">
           <i className="fab fa-instagram" />
         </a>
-        <a href="facebook.com" target="_blank">
+        <a href="https://www.facebook.com/" target="_blank">
           <i className="fab fa-youtube" />
         </a>
       </div>

@@ -118,7 +118,7 @@ const Advertisers = () => (
 
     <DescLeft descName="hardToBelieve" Description={hardDesc} />
 
-    <div id="statistics">
+    <div id="statistics" className="statistics">
       <div className="container row">
         <div className="col-sm-12 col-md-4 cc borderR">
           <h3 className="st">400%</h3>
