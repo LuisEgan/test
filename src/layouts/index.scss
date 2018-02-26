@@ -1028,3 +1028,112 @@ nav {
     }
   }
 }
+
+/******************************************************/
+/*********************FOOTER***************************/
+/******************************************************/
+
+#footer {
+  background-color: white;
+  padding: 7% 3%;
+
+  span {
+    color: $gray !important;
+  }
+
+  a {
+    color: $gray !important;
+    padding: 3% 0;
+  }
+
+  img {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    max-width: 150px;
+  }
+
+  > div {
+    display: flex;
+    flex-flow: column;
+
+    &:first-child {
+      text-align: center;
+      span {
+        padding-bottom: 5%;
+      }
+      a {
+        width: 70%;
+        margin: 0 auto;
+        background-color: $blueAdvir;
+        color: white !important;
+      }
+    }
+
+    &:last-child {
+      text-align: center;
+      text-align: left;
+
+      #email-container {
+        display: flex;
+        align-content: center;
+        input {
+          width: 70%;
+          margin: 0;
+        }
+        a {
+          @extend .cc;
+          background-color: $blueAdvir;
+          color: white !important;
+          width: 20%;
+          margin: 0 5%;
+          padding: 1% 0;
+        }
+      }
+
+      #sn-buttons {
+        display: flex;
+        align-content: center;
+        padding: 15% 0 0;
+        a {
+          padding: 0 2%;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+        i {
+          @extend .cc;
+          padding: 3%;
+          margin: 0 2%;
+          border-radius: 100%;
+          background-color: black;
+          color: white;
+          font-size: 1.3em;
+          width: 40px;
+          height: 40px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 760px) {
+    > div {
+      text-align: center !important;
+      padding: 5% 0;
+
+      #email-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #sn-buttons {
+        justify-content: center;
+      }
+    }
+  }
+}
