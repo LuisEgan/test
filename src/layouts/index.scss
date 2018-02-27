@@ -570,8 +570,8 @@ $horizontalGradient: linear-gradient(
     > img,
     > iframe,
     .video-react-controls-enabled {
-      @include border-radius-ext(10px, 10px, 2px, 2px);
-      @include box-shadow(0, 0, 0, 2px, $grayLighter);
+      @include border-radius-ext(10px, 10px, 1px, 1px);
+      @include box-shadow(0, 0, 0, 1px, $grayLighter);
       border: solid 10px black;
       display: block;
       margin: 0 auto;
@@ -590,6 +590,7 @@ $horizontalGradient: linear-gradient(
       display: block;
       margin: 0 auto;
       padding: 0;
+      background-color: transparent;
     }
   }
 }
