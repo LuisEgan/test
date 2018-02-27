@@ -12,7 +12,7 @@ const HorizontalImgs = ({ titleText, subText, benefitText, images }) => {
       <h4 className="mb">{subText}</h4>
       <div className="hor-imgs-container cc">{horImgs}</div>
       {benefitText !== "" && (
-        <Link to="/" className="btn white-btn">
+        <Link to="/community" className="btn white-btn">
           {benefitText}
         </Link>
       )}
