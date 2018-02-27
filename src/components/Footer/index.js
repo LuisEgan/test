@@ -30,7 +30,7 @@ const VideoBg = () => (
       <Link to="/">Get in touch</Link>
     </div>
     <div className="col-sm-12 col-md-3">
-      {sendPulseForm}
+      {/* {sendPulseForm} */}
 
       <span className="mb">Subscribe to newsletter</span>
       <div id="email-container">
