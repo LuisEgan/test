@@ -10,10 +10,6 @@ const DescLineOF = ({
   youtubeId,
   Component
 }) => {
-  console.log("imgSrc: ", imgSrc);
-  console.log("videoSrc: ", videoSrc);
-  console.log("youtubeId: ", youtubeId);
-  console.log("Component: ", Component);
   return (
     <div className="container description-line-overflow-img row">
       <div className="description  col-sm-12 col-md-6">
