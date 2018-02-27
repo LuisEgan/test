@@ -21,7 +21,7 @@ const titleText = "A collaboration between industry leaders";
 const subText =
   "The Metaverse  transcends the interest of a single company and is built with various industry leaders.";
 const benefitText = "";
-const comImgs = [howWorksBg, howWorksBg, howWorksBg, howWorksBg];
+const comImgs = [];
 
 const hyperlinksVidDesc = () => (
   <div>
@@ -47,9 +47,9 @@ const Oasis = () => (
       <div className="container">
         <h3 className="st">The metaverse is here</h3>
         <h4 className="mb">
-          Drag and drop the Oasis™ portal for users to travel between your app
-          and other VR apps. Make money by sending your churning users away, or
-          acquire new users from other leading apps.
+          Drag and drop the Oasis™ portal for users to travel between <br />{" "}
+          your app and other VR apps. Make money by sending your <br /> churning
+          users away, or acquire new users from other leading <br /> apps.
         </h4>
         <br />
         <ScrollLink

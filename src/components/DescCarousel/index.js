@@ -17,27 +17,14 @@ const DescCarousel = ({ carouselName, CarouselDescription, images }) => {
           data-ride="carousel"
         >
           <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img
-                className="d-block w-100"
-                src={images[0]}
-                alt="First slide"
-              />
-            </div>
-            <div className="carousel-item">
-              <img
-                className="d-block w-100"
-                src={images[0]}
-                alt="Second slide"
-              />
-            </div>
-            <div className="carousel-item">
-              <img
-                className="d-block w-100"
-                src={images[0]}
-                alt="Third slide"
-              />
-            </div>
+            {images.map((img, i) => {
+              const active = i === 0 ? "active" : "";
+              return (
+                <div className={`carousel-item ${active}`} key={img}>
+                  <img className="d-block w-100" src={img} alt="First slide" />
+                </div>
+              );
+            })}
           </div>
           <a
             className="carousel-control-prev"

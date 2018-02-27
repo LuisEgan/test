@@ -10,12 +10,13 @@ import DescLineOF from "../components/DescLineOF"; //Description Line Overflow i
 import DescCarousel from "../components/DescCarousel";
 import DescLeft from "../components/DescLeft";
 import VideoBg from "../components/VideoBg";
+import CircleText from "../components/CircleText";
 
 // ASSETS
 import howWorksBg from "../assets/imgs/advertiserpage2.jpg";
 import Advertisers_bg from "../assets/vids/Advertisers_bg.webm";
 import pledgelogo_2 from "../assets/imgs/pledgelogo_2.png";
-import laptops from "../assets/imgs/laptops.png";
+import laptop from "../assets/imgs/Advir_devPlatform4.png";
 
 // Images for Carousels
 const carouselImgs = [howWorksBg];
@@ -94,9 +95,10 @@ const Advertisers = () => (
       <div className="container">
         <h3 className="st">Your brand, immersed.</h3>
         <h4 className="mb">
-          Buy VR/AR inventory programmatically through DSPs you already use.
-          Reach an engaged audience with standardized ad units, access gaze
-          tracking data, and get ready for the immersive revolution.
+          Buy VR/AR inventory programmatically through DSPs you already <br />
+          use. Reach an engaged audience with standardized ad units, <br />
+          access gaze tracking data, and get ready for the immersive <br />
+          revolution.
         </h4>
         <br />
         <ScrollLink
@@ -160,7 +162,7 @@ const Advertisers = () => (
     <div id="reporting" className="img-of">
       <div className="img-of-img-container">
         <h3 className="st">Stunning VR/AR reporting and analytics</h3>
-        <img src={laptops} />
+        <img src={laptop} />
       </div>
       <div className="container row">
         <div className="col-sm-12 col-md-3">
@@ -198,17 +200,13 @@ const Advertisers = () => (
       <h2 className="st">Pioneering engagement in VR/AR</h2>
       <div className="container row">
         <div className="col-sm-12 col-md-4">
-          <div>
-            <Circle
-              percent="29"
-              strokeWidth="4"
-              trailWidth="4"
-              strokeColor="#5077E1"
-            />
-            <div className="mb circleText">
-              29% <br /> <span>ENGAGEMENT</span>{" "}
-            </div>
-          </div>
+          <CircleText
+            percent="29"
+            strokeWidth="6"
+            trailWidth="6"
+            strokeColor="#5077E1"
+            text="ENGAGEMENT"
+          />
           <div>
             <h3 className="st">Active engagement</h3>
           </div>
@@ -220,17 +218,13 @@ const Advertisers = () => (
           </div>
         </div>
         <div className="col-sm-12 col-md-4">
-          <div>
-            <Circle
-              percent="67"
-              strokeWidth="4"
-              trailWidth="4"
-              strokeColor="#37CACA"
-            />
-            <div className="mb circleText">
-              67% <br /> <span>BRAND RECALL</span>{" "}
-            </div>
-          </div>
+          <CircleText
+            percent="67"
+            strokeWidth="6"
+            trailWidth="6"
+            strokeColor="#37CACA"
+            text="BRAND RECALL"
+          />
           <div>
             <h3 className="st">Lasting impact</h3>
           </div>
@@ -242,17 +236,13 @@ const Advertisers = () => (
           </div>
         </div>
         <div className="col-sm-12 col-md-4">
-          <div>
-            <Circle
-              percent="73"
-              strokeWidth="4"
-              trailWidth="4"
-              strokeColor="#4B44C5"
-            />
-            <div className="mb circleText">
-              73% <br /> <span>POSITIVE FEEDBACK</span>{" "}
-            </div>
-          </div>
+          <CircleText
+            percent="73"
+            strokeWidth="6"
+            trailWidth="6"
+            strokeColor="#4B44C5"
+            text="POSITIVE FEEDBACK"
+          />
           <div>
             <h3 className="st">A geat experience</h3>
           </div>

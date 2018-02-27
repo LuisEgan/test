@@ -36,8 +36,9 @@ const Community = () => (
         <h3 className="st">We are your number one fan</h3>
         <h4 className="mb">
           Advir is a lot more than an advertising platform. We promote our
-          developers, invite you to events, and leverage our connections for you
-          to succeed.
+          <br />
+          developers, invite you to events, and leverage our connections for
+          <br /> you to succeed.
         </h4>
         <br />
         <ScrollLink

@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
+import { WindowResizeListener } from "react-window-resize-listener";
 
 import logo from "../../assets/imgs/logo-white.png";
 
@@ -24,9 +25,10 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { hamburgerToggle: false };
+    this.state = { hamburgerToggle: false, forceTransparency: false };
 
     this.handleHamburger = this.handleHamburger.bind(this);
+    this.handleResize = this.handleResize.bind(this);
   }
 
   handleHamburger() {
@@ -34,13 +36,21 @@ class Header extends React.Component {
     this.setState({ hamburgerToggle: !hamburgerToggle });
   }
 
-  render() {
-    const { hamburgerToggle } = this.state;
+  handleResize(windowSize) {
+    const { windowWidth } = windowSize;
+    const forceTransparency = windowWidth >= 991;
+    this.setState({ forceTransparency });
+  }
 
-    const navBgColor = hamburgerToggle ? "#157cc1" : "transparent";
+  render() {
+    const { hamburgerToggle, forceTransparency } = this.state;
+
+    const navBgColor =
+      hamburgerToggle && !forceTransparency ? "#157cc1" : "transparent";
     const navStyle = { backgroundColor: navBgColor };
     return (
       <nav className="navbar navbar-expand-lg navbar-light" style={navStyle}>
+        <WindowResizeListener onResize={this.handleResize} />
         <Link to="/" id="navbar-logo">
           <img src={logo} alt="Advir-Logo" />
         </Link>

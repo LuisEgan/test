@@ -9,7 +9,8 @@ import DescLeft from "../components/DescLeft";
 import HorizontalImgs from "../components/HorizontalImgs";
 
 // ASSETS
-import howWorksBg from "../assets/imgs/advertiserpage2.jpg";
+import Unity from "../assets/imgs/Official_unity_logo-white.png";
+import Unreal from "../assets/imgs/Unreal_Engine_Logo-white.png";
 import Publishers_bg from "../assets/vids/Publishers_bg.webm";
 import laptops from "../assets/imgs/laptops.png";
 
@@ -19,7 +20,7 @@ const downloadVidDesc = () => (
     <br />
     <div className="imgs-container">
       <div>
-        <img src={howWorksBg} />
+        <img src={Unity} />
         <Link className="btn white-btn" to="/">
           Advir for Unity
         </Link>
@@ -29,7 +30,7 @@ const downloadVidDesc = () => (
         </h4>
       </div>
       <div>
-        <img src={howWorksBg} />
+        <img src={Unreal} />
         <Link className="btn white-btn" to="/">
           Advir for Unreal
         </Link>

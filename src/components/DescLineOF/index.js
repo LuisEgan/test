@@ -2,7 +2,18 @@ import React from "react";
 import Link from "gatsby-link";
 import { Player } from "video-react";
 
-const DescLineOF = ({ title, text, imgSrc, videoSrc, youtubeId }) => {
+const DescLineOF = ({
+  title,
+  text,
+  imgSrc,
+  videoSrc,
+  youtubeId,
+  Component
+}) => {
+  console.log("imgSrc: ", imgSrc);
+  console.log("videoSrc: ", videoSrc);
+  console.log("youtubeId: ", youtubeId);
+  console.log("Component: ", Component);
   return (
     <div className="container description-line-overflow-img row">
       <div className="description  col-sm-12 col-md-6">
@@ -10,7 +21,7 @@ const DescLineOF = ({ title, text, imgSrc, videoSrc, youtubeId }) => {
         <br />
         <span className="mb">{text}</span>
         {title === "1. Install" && (
-          <Link to="/" className="nav-link btn white-btn">
+          <Link to="/download" className="nav-link btn white-btn">
             Download Advir
           </Link>
         )}
@@ -33,6 +44,7 @@ const DescLineOF = ({ title, text, imgSrc, videoSrc, youtubeId }) => {
             />
           )}
         {!!imgSrc && !videoSrc && !youtubeId && <img src={imgSrc} />}
+        {!!Component && !videoSrc && !youtubeId && !imgSrc && <Component />}
       </div>
     </div>
   );

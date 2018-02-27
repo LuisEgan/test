@@ -30,12 +30,12 @@ const VideoBg = () => (
       <Link to="/">Get in touch</Link>
     </div>
     <div className="col-sm-12 col-md-3">
+      {sendPulseForm}
+
       <span className="mb">Subscribe to newsletter</span>
       <div id="email-container">
         <input type="text" className="form-control" placeholder="email" />
-        <Link to="/" className="btn">
-          ok
-        </Link>
+        <input type="submit" className="btn" value="ok" />
       </div>
       <div id="sn-buttons">
         <a href="https://www.facebook.com/" target="_blank">

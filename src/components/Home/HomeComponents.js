@@ -58,8 +58,9 @@ export class DailyUsers extends React.Component {
 
   parseMoneyValue(moneyValue) {
     const s = moneyValue.toString();
-    const afterComa = s[0] === "0" ? 0 : s.substring(1);
-    return "$ " + s[0] + "," + afterComa;
+    const coma = s.length > 3 ? "," : "";
+    const afterComa = s[0] === "0" ? "" : s.substring(1);
+    return "$ " + s[0] + coma + afterComa;
   }
 
   handleBarChange(e) {
@@ -105,7 +106,7 @@ export class DailyUsers extends React.Component {
             </div>
           </div>
           <div id="btn-container" className="col-sm-12">
-            <Link to="/" className="btn">
+            <Link to="/download" className="btn">
               Download Advir
             </Link>
           </div>
@@ -152,7 +153,7 @@ export const introOasis = () => (
       industry forward.
     </h5>
     <br />
-    <Link to="/" className="btn white-btn">
+    <Link to="/oasis" className="btn white-btn">
       Learn more
     </Link>
   </div>
@@ -171,7 +172,7 @@ export const WhyAdvir = ({ icons }) => (
         </h4>
       </div>
       <div className="col-sm-12 col-md-4">
-        <img src={icons[0]} />
+        <img src={icons[1]} />
         <h3 className="st">Programmatic</h3>
         <h4 className="mb">
           We sell your inventory to the largest advertising networks to
@@ -179,7 +180,7 @@ export const WhyAdvir = ({ icons }) => (
         </h4>
       </div>
       <div className="col-sm-12 col-md-4">
-        <img src={icons[0]} />
+        <img src={icons[2]} />
         <h3 className="st">Open API</h3>
         <h4 className="mb">
           Connect services to Advir via our open API, or publish your own tools
