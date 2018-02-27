@@ -2,6 +2,8 @@ import React from "react";
 import Link from "gatsby-link";
 import { Player } from "video-react";
 
+import laptopBase from "../../assets/imgs/laptopBase.png";
+
 const DescLineOF = ({
   title,
   text,
@@ -22,25 +24,29 @@ const DescLineOF = ({
           </Link>
         )}
       </div>
-      <div className="image col-sm-12 col-md-6">
+      <div className="image col-sm-12 col-md-6 laptop-screen">
         {/* Priority: 1. local video, 2. youtube video and 3. Image */}
         {/* If all are provided, the local video is going to be displayed, and so on. */}
-        {!!videoSrc && (
-          <Player autoPlay={true} loop={true} playsInline src={videoSrc} />
-        )}
-        {!!youtubeId &&
-          !videoSrc && (
-            <iframe
-              width="560"
-              height="315"
-              src={`https://www.youtube.com/embed/${youtubeId}?rel=0&amp;showinfo=0`}
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-            />
+        <div>
+          {!!videoSrc && (
+            <Player autoPlay={true} loop={true} playsInline src={videoSrc} />
           )}
-        {!!imgSrc && !videoSrc && !youtubeId && <img src={imgSrc} />}
-        {!!Component && !videoSrc && !youtubeId && !imgSrc && <Component />}
+          {!!youtubeId &&
+            !videoSrc && (
+              <iframe
+                width="560"
+                height="315"
+                src={`https://www.youtube.com/embed/${youtubeId}?rel=0&amp;showinfo=0`}
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+              />
+            )}
+          {!!imgSrc && !videoSrc && !youtubeId && <img src={imgSrc} />}
+          {!!Component && !videoSrc && !youtubeId && !imgSrc && <Component />}
+
+          {!Component && <img src={laptopBase} className="laptop-base" />}
+        </div>
       </div>
     </div>
   );

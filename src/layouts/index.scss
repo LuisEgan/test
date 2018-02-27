@@ -10,6 +10,12 @@
   -ms-border-radius: $radius;
   border-radius: $radius;
 }
+@mixin border-radius-ext($t, $l, $b, $r) {
+  -webkit-border-radius: $t $l $b $r;
+  -moz-border-radius: $t $l $b $r;
+  -ms-border-radius: $t $l $b $r;
+  border-radius: $t $l $b $r;
+}
 @mixin width-fit-content() {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -21,6 +27,10 @@
   height: -moz-fit-content;
   height: -ms-fit-content;
   height: fit-content;
+}
+@mixin box-shadow($t, $l, $b, $r, $color) {
+  -moz-box-shadow: $t $l $b $r $color;
+  box-shadow: $t $l $b $r $color;
 }
 
 * {
@@ -551,6 +561,35 @@ $horizontalGradient: linear-gradient(
         color: black !important;
         font-size: calc(1.3em + 1.3vw);
       }
+    }
+  }
+}
+
+.laptop-screen {
+  > div {
+    > img,
+    > iframe,
+    .video-react-controls-enabled {
+      @include border-radius-ext(10px, 10px, 2px, 2px);
+      @include box-shadow(0, 0, 0, 2px, $grayLighter);
+      border: solid 10px black;
+      display: block;
+      margin: 0 auto;
+      width: 70%;
+      background-color: black;
+    }
+
+    .video-react-controls-enabled {
+      padding-top: 45% !important;
+    }
+
+    .laptop-base {
+      border: 0;
+      box-shadow: none;
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+      padding: 0;
     }
   }
 }
