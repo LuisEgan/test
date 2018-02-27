@@ -44,6 +44,9 @@ import laptopsTri from "../assets/imgs/Advir_devPlatform_all.png";
 // Videos
 import Index_bg from "../assets/vids/Index_bg.webm";
 
+// Gifs
+import AdsGif from "../assets/gifs/Advertisers_bg.gif";
+
 // Images for DescLineOFs
 import part1 from "../assets/imgs/book2.jpg";
 
@@ -91,9 +94,7 @@ class IndexPage extends React.Component {
           <DescLineOF
             title="1. Install"
             text="Download and instlal Advir for your favorite game engine and join a community of 150+ VR/AR developers."
-            imgSrc={part1}
-            videoSrc={Index_bg}
-            youtubeId={`-6Pm8qFu1rE`}
+            imgSrc={AdsGif}
           />
           <DescLineOF
             title="2. Place"
