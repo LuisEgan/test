@@ -124,7 +124,7 @@ a {
   // font-size: 12px;
   color: #a8afb9;
   // letter-spacing: 1.2px;
-  font-size: calc(1.7em + 0.7vw);
+  font-size: calc(0.3em + 0.7vw);
 }
 
 .bt {
@@ -318,6 +318,7 @@ $horizontalGradient: linear-gradient(
       border: 0;
       background-color: transparent;
       width: 15%;
+      font-size: 3em !important;
     }
   }
 }
