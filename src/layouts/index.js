@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 
 // import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-// import "../../node_modules/bootstrap/dist/js/bootstrap.js";
+import "../../node_modules/bootstrap/dist/js/bootstrap.js";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -19,7 +19,7 @@ const popper = (
 const bootstrap = (
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" />
 );
-const sendPulse = (
+const sendPulsePopUp = (
   <script
     src="//static-login.sendpulse.com/apps/fc3/build/loader.js"
     sp-form-id="2d38245081aeffd94791afbd87d2c7277cd250596c09b5791eac104543136e5e"
@@ -38,11 +38,11 @@ const TemplateWrapper = ({ children }) => (
       {jquery}
       {popper}
       {bootstrap}
-      {sendPulse}
     </Helmet>
     <Header />
     <div>{children()}</div>
     <Footer />
+    {sendPulsePopUp}
   </div>
 );
 

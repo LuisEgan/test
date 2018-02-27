@@ -4,6 +4,13 @@ import Link from "gatsby-link";
 import advirBlack from "../../assets/imgs/advir_black.png";
 import "../../assets/css/fontAwesome/fontawesome-all.min.css";
 
+const sendPulseForm = (
+  <script
+    src="//static-login.sendpulse.com/apps/fc3/build/loader.js"
+    sp-form-id="c33250e3c4253a68b2c4371805574040c37e5d2156506fcbf12b1ae18b2a7d65"
+  />
+);
+
 const VideoBg = () => (
   <div id="footer" className="row">
     <div className="col-sm-12 col-md-3">
