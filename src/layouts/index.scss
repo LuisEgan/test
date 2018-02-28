@@ -329,9 +329,15 @@ $horizontalGradient: linear-gradient(
     }
 
     .video-react-big-play-button.video-react-big-play-button-left {
+      // position: absolute;
+      // left: 42%;
+      // top: 37%;
       position: absolute;
-      left: 42%;
-      top: 37%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
       border: 0;
       background-color: transparent;
       width: 15%;
@@ -398,9 +404,24 @@ $horizontalGradient: linear-gradient(
     }
   }
 
-  .video-react-control-bar.video-react-control-bar-auto-hide,
+  .video-react-control-bar.video-react-control-bar-auto-hide {
+    display: none;
+  }
+
   .video-react-big-play-button.video-react-big-play-button-left {
-    // display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border: 0;
+    background-color: black;
+    width: 10%;
+    height: 10%;
+    &:before {
+      position: relative;
+    }
   }
 }
 
