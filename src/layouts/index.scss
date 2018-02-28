@@ -754,14 +754,17 @@ nav {
             }
             .rc-slider-rail {
               background-color: transparent;
+              transition: unset;
             }
             .rc-slider-track {
+              transition: unset;
               height: 100%;
               top: 0;
               @include border-radius(10px);
               background-color: #ffad33;
             }
             .rc-slider-handle {
+              transition: unset;
               display: none;
             }
           }

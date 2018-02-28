@@ -81,7 +81,7 @@ export class DailyUsers extends React.Component {
               <h4 className="pt no-select">
                 How many daily users does your VR app has?
               </h4>
-              <div id="bar" onDrag={this.handleDrag}>
+              <div id="bar">
                 <Slider
                   min={0}
                   max={1000}
