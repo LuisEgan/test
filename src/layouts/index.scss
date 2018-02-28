@@ -285,6 +285,12 @@ $horizontalGradient: linear-gradient(
   }
 }
 
+.video-react-big-play-button {
+  &:before {
+    position: relative;
+  }
+}
+
 .description-video {
   display: flex;
   position: relative;
@@ -318,7 +324,7 @@ $horizontalGradient: linear-gradient(
     .video-react-controls-enabled {
       padding-top: 37.5vh !important;
       height: 70%;
-      width: 70%;
+      // width: 70%;
       margin: auto;
     }
 
