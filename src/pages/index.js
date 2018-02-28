@@ -45,10 +45,10 @@ import laptopsTri from "../assets/imgs/Advir_devPlatform_all.png";
 import Index_bg from "../assets/vids/Index_bg.webm";
 import installVidW from "../assets/vids/Unity_installAdmix600.webm";
 import installVid from "../assets/vids/Unity_installAdmix600.mp4";
-import placeVidW from "../assets/vids/2_Admix.webm";
-import placeVid from "../assets/vids/2_Admix.mp4";
-import configVidW from "../assets/vids/3_platform.webm";
-import configVid from "../assets/vids/3_platform.mp4";
+import placeVidW from "../assets/vids/platformAdmix600.webm";
+import placeVid from "../assets/vids/platformAdmix600.mp4";
+import configVidW from "../assets/vids/Unity_Admix600.webm";
+import configVid from "../assets/vids/Unity_Admix600.mp4";
 
 const installVids = [installVidW, installVid];
 const placeVids = [placeVidW, placeVid];
@@ -127,7 +127,7 @@ class IndexPage extends React.Component {
             Component={step4cirle}
           />
         </div>
-        <DailyUsers />
+        {/* <DailyUsers /> */}
         <DescCarousel
           carouselName="placements"
           CarouselDescription={nativePlacementsCarouselDesc}
