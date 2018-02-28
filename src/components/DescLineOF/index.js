@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 import { Player } from "video-react";
 
 import laptopBase from "../../assets/imgs/laptopBase.png";
-import book from "../../assets/imgs/book2.jpg";
+import logo from "../../assets/imgs/logo-white.jpg";
 
 const DescLineOF = ({
   title,
@@ -32,7 +32,7 @@ const DescLineOF = ({
         <div>
           {!!videoSrc && (
             // <Player playsInline src={videoSrc[0]} />
-            <video loop autoPlay muted playsInline poster={book}>
+            <video loop autoPlay muted playsInline poster={logo}>
               {videoSrc.map((src, i) => {
                 return <source src={src} type={`video/${videoType[i]}`} />;
               })}
