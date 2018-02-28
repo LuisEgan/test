@@ -3,6 +3,7 @@ import Link from "gatsby-link";
 import { Player } from "video-react";
 
 import laptopBase from "../../assets/imgs/laptopBase.png";
+import book from "../../assets/imgs/book2.jpg";
 
 const DescLineOF = ({
   title,
@@ -15,7 +16,7 @@ const DescLineOF = ({
 }) => {
   return (
     <div className="container description-line-overflow-img row">
-      <div className="description  col-sm-12 col-md-6">
+      <div className="description  col-sm-12 col-md-3">
         <h3 className="st">{title}</h3>
         <br />
         <span className="mb">{text}</span>
@@ -25,17 +26,17 @@ const DescLineOF = ({
           </Link>
         )}
       </div>
-      <div className="image col-sm-12 col-md-6 laptop-screen">
+      <div className="image col-sm-12 col-md-9 laptop-screen">
         {/* Priority: 1. local video, 2. youtube video and 3. Image */}
         {/* If all are provided, the local video is going to be displayed, and so on. */}
         <div>
           {!!videoSrc && (
-            <Player playsInline src={videoSrc[0]} />
-            // <video loop autoPlay muted playsInline controls className="videoBg">
-            //   {videoSrc.map((src, i) => {
-            //     return <source src={src} type={`video/${videoType[i]}`} />;
-            //   })}
-            // </video>
+            // <Player playsInline src={videoSrc[0]} />
+            <video loop autoPlay muted playsInline poster={book}>
+              {videoSrc.map((src, i) => {
+                return <source src={src} type={`video/${videoType[i]}`} />;
+              })}
+            </video>
           )}
           {!!youtubeId &&
             !videoSrc && (
