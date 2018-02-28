@@ -38,6 +38,7 @@ const TemplateWrapper = ({ children }) => (
       {jquery}
       {popper}
       {bootstrap}
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </Helmet>
     <Header />
     <div>{children()}</div>
