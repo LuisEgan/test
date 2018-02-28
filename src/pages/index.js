@@ -43,8 +43,8 @@ import laptopsTri from "../assets/imgs/Advir_devPlatform_all.png";
 
 // Videos
 import Index_bg from "../assets/vids/Index_bg.webm";
-import installVidW from "../assets/vids/1_installAdmix.webm";
-import installVid from "../assets/vids/1_installAdmix.mp4";
+import installVidW from "../assets/vids/Unity_installAdmix720.webm";
+import installVid from "../assets/vids/Unity_installAdmix720.mp4";
 import placeVidW from "../assets/vids/2_Admix.webm";
 import placeVid from "../assets/vids/2_Admix.mp4";
 import configVidW from "../assets/vids/3_platform.webm";
