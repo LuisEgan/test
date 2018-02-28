@@ -32,7 +32,7 @@ const DescLineOF = ({
         <div>
           {!!videoSrc && (
             // <Player playsInline src={videoSrc[0]} />
-            <video loop autoPlay muted={true} playsInline poster={logo}>
+            <video loop autoPlay muted playsInline poster={logo}>
               {videoSrc.map((src, i) => {
                 return <source src={src} type={`video/${videoType[i]}`} />;
               })}
