@@ -193,7 +193,7 @@ $horizontalGradient: linear-gradient(
 /******************************************************/
 
 .white-btn {
-  color: $blueAdvir !important;
+  color: $blueAdvir;
   background-color: white;
 }
 
@@ -605,14 +605,22 @@ $horizontalGradient: linear-gradient(
 /******************************************************/
 
 nav {
-  // position: absolute !important;
   z-index: 1;
   top: 0;
-  // height: 15vh;
   width: 100%;
   padding: 1.5rem 2rem !important;
   padding-right: 1% !important;
   color: white;
+
+  .navbar-toggler {
+    border-color: rgb(255, 255, 255) !important;
+    font-size: 1.25rem !important;
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+    }
+  }
+
   #navbar-logo {
     width: 15%;
     min-width: 100px;
@@ -628,7 +636,7 @@ nav {
     ul {
       li {
         a {
-          margin-left: 5.1vw;
+          margin-left: 3vw;
           font-size: 1.2vw;
           color: white;
           text-align: center;
@@ -647,6 +655,30 @@ nav {
 @media (min-width: 992px) {
   nav {
     background-color: transparent;
+    #navbarSupportedContent {
+      ul {
+        li {
+          a {
+            margin-left: 5vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  nav {
+    #navbarSupportedContent {
+      > ul {
+        > li {
+          a {
+            color: white !important;
+            background-color: transparent !important;
+          }
+        }
+      }
+    }
   }
 }
 

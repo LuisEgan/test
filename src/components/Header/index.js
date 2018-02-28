@@ -15,6 +15,7 @@ const Hamburger = ({ handleHamburger }) => {
       aria-expanded="false"
       aria-label="Toggle navigation"
       onClick={handleHamburger}
+      id="hamburguer"
     >
       <span className="navbar-toggler-icon" />
     </button>
@@ -29,6 +30,7 @@ class Header extends React.Component {
 
     this.handleHamburger = this.handleHamburger.bind(this);
     this.handleResize = this.handleResize.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleHamburger() {
@@ -42,6 +44,13 @@ class Header extends React.Component {
     this.setState({ forceTransparency });
   }
 
+  handleClick(link) {
+    const { hamburgerToggle } = this.state;
+    if (hamburgerToggle) {
+      document.getElementById("hamburguer").click();
+    }
+  }
+
   render() {
     const { hamburgerToggle, forceTransparency } = this.state;
 
@@ -49,7 +58,7 @@ class Header extends React.Component {
       hamburgerToggle && !forceTransparency ? "#157cc1" : "transparent";
     const navStyle = { backgroundColor: navBgColor };
     return (
-      <nav className="navbar navbar-expand-lg navbar-light" style={navStyle}>
+      <nav className="navbar navbar-expand-md navbar-dark" style={navStyle}>
         <WindowResizeListener onResize={this.handleResize} />
         <Link to="/" id="navbar-logo">
           <img src={logo} alt="Advir-Logo" />
