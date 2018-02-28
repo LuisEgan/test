@@ -43,9 +43,9 @@ import laptopsTri from "../assets/imgs/Advir_devPlatform_all.png";
 
 // Videos
 import Index_bg from "../assets/vids/Index_bg.webm";
-import installVid from "../assets/vids/1_installAdmix.webm";
-import placeVid from "../assets/vids/2_Admix.webm";
-import configVid from "../assets/vids/3_platform.webm";
+import installVid from "../assets/vids/1_installAdmix.mp4";
+import placeVid from "../assets/vids/2_Admix.mp4";
+import configVid from "../assets/vids/3_platform.mp4";
 
 // Gifs
 import AdsGif from "../assets/gifs/Advertisers_bg.gif";
@@ -98,21 +98,21 @@ class IndexPage extends React.Component {
             title="1. Install"
             text="Download and instlal Advir for your favorite game engine and join a community of 150+ VR/AR developers."
             videoSrc={installVid}
-            videoType="webm"
+            videoType="mp4"
           />
           <DescLineOF
             title="2. Place"
             text="Define your inventory - areas of your content to sell to advertisers. It can be banners, videos or 3D placements. You keep the control."
             imgSrc={part1}
             videoSrc={placeVid}
-            videoType="webm"
+            videoType="mp4"
             youtubeId={`-6Pm8qFu1rE`}
           />
           <DescLineOF
             title="3. Configure"
             text="Use our web platform to manage your apps, filter the most relevant advertisers, and activate your campaign."
             videoSrc={configVid}
-            videoType="webm"
+            videoType="mp4"
           />
           <DescLineOF
             title="4. Sell"
