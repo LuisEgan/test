@@ -30,7 +30,12 @@ const DescLineOF = ({
         {/* If all are provided, the local video is going to be displayed, and so on. */}
         <div>
           {!!videoSrc && (
-            <Player autoPlay={true} loop={true} playsInline src={videoSrc[0]} />
+            <Player
+              autoPlay={false}
+              loop={true}
+              playsInline
+              src={videoSrc[0]}
+            />
             // <video loop autoPlay muted playsInline controls className="videoBg">
             //   {videoSrc.map((src, i) => {
             //     return <source src={src} type={`video/${videoType[i]}`} />;
