@@ -273,12 +273,13 @@ $horizontalGradient: linear-gradient(
 
 .description-pair-container {
   padding: 8% 0;
-
+  padding-left: 10%;
   .description-container {
     @extend .cc;
-    padding: 2%;
+    justify-content: left;
+    padding: 0;
     > div {
-      margin-left: 5vw;
+      // margin-left: 5vw;
       width: 70%;
     }
   }
@@ -335,8 +336,9 @@ $horizontalGradient: linear-gradient(
 
 .description-line-overflow-img {
   display: flex;
-  padding: 10% 5% 0;
+  padding: 10%;
   padding-top: 5%;
+  padding-right: 1%;
   position: relative;
 
   h3 {
@@ -360,11 +362,13 @@ $horizontalGradient: linear-gradient(
   .description {
     font-size: 0.8em;
     padding-top: 5%;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .image {
     @extend .cc;
-    padding: 5%;
+    // padding: 5%;
     // padding-top: 0;
     img {
       width: 70%;
@@ -569,6 +573,7 @@ $horizontalGradient: linear-gradient(
   > div {
     > img,
     > iframe,
+    > video,
     .video-react-controls-enabled {
       @include border-radius-ext(10px, 10px, 1px, 1px);
       @include box-shadow(0, 0, 0, 1px, $grayLighter);
@@ -872,7 +877,10 @@ nav {
         }
       }
     }
-    @media only screen and (max-width: 760px) {
+  }
+  @media only screen and (max-width: 760px) {
+    #whyAdvir {
+      padding-bottom: 50%;
       .container {
         > div {
           text-align: center;

@@ -9,6 +9,7 @@ const DescLineOF = ({
   text,
   imgSrc,
   videoSrc,
+  videoType,
   youtubeId,
   Component
 }) => {
@@ -29,7 +30,10 @@ const DescLineOF = ({
         {/* If all are provided, the local video is going to be displayed, and so on. */}
         <div>
           {!!videoSrc && (
-            <Player autoPlay={true} loop={true} playsInline src={videoSrc} />
+            // <Player autoPlay={true} loop={true} playsInline src={videoSrc} />
+            <video loop muted autoPlay className="videoBg">
+              <source src={videoSrc} type={`video/${videoType}`} />
+            </video>
           )}
           {!!youtubeId &&
             !videoSrc && (
