@@ -155,11 +155,11 @@ a {
 
 @media only screen and (max-width: 760px) {
   .st {
-    font-size: calc(0.6em + 1.4vw);
+    font-size: calc(0.8em + 1.4vw);
   }
 
   .mb {
-    font-size: calc(0.5em + 1vw);
+    font-size: calc(0.6em + 1vw);
   }
 }
 
@@ -187,6 +187,8 @@ $horizontalGradient: linear-gradient(
   rgb(75, 68, 197),
   rgb(55, 202, 202)
 );
+
+$opaqueBlackBg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 
 /******************************************************/
 /**********************GENERAL*************************/
@@ -344,6 +346,19 @@ $horizontalGradient: linear-gradient(
       font-size: 3em !important;
     }
   }
+
+  @media only screen and (max-width: 760px) {
+    padding: 7% 5%;
+
+    .videoDescription {
+      padding: 5%;
+    }
+
+    .description-container {
+      text-align: center;
+      justify-content: center;
+    }
+  }
 }
 
 .description-line-overflow-img {
@@ -455,6 +470,13 @@ $horizontalGradient: linear-gradient(
 @media only screen and (max-width: 760px) {
   .description-carousel {
     padding: 3%;
+    .carouselDescription {
+      > div {
+        width: 100%;
+        text-align: center;
+        padding: 7% 5%;
+      }
+    }
   }
 }
 
@@ -525,6 +547,10 @@ $horizontalGradient: linear-gradient(
       margin: 0 1.2%;
     }
   }
+
+  @media only screen and (max-width: 760px) {
+    padding: 7% 5%;
+  }
 }
 
 .statistics {
@@ -551,6 +577,16 @@ $horizontalGradient: linear-gradient(
   h4 {
     color: black !important;
     padding: 2%;
+  }
+
+  @media only screen and (max-width: 760px) {
+    h3 {
+      width: 50%;
+      text-align: center;
+    }
+    h4 {
+      text-align: center;
+    }
   }
 }
 
@@ -731,9 +767,16 @@ nav {
   }
 
   #firstAd {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background: $opaqueBlackBg,
       url(../assets/imgs/developerpage1.jpg) top center no-repeat;
     background-size: cover;
+    @media only screen and (max-width: 760px) {
+      padding: 7% 5%;
+      .videoDescription {
+        text-align: center;
+        justify-content: center;
+      }
+    }
   }
 
   #dailyUsers {
@@ -904,10 +947,16 @@ nav {
         }
       }
     }
+
+    @media only screen and (max-width: 760px) {
+      .image {
+        padding: 5% 0;
+      }
+    }
   }
 
   #introOasis {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background: $opaqueBlackBg,
       url(../assets/imgs/developerpage2.jpg) top center no-repeat;
     background-size: cover;
 
@@ -969,6 +1018,9 @@ nav {
       }
     }
     @media only screen and (max-width: 760px) {
+      .img-of-img-container {
+        text-align: center;
+      }
       .container {
         > div {
           text-align: center;
@@ -998,7 +1050,7 @@ nav {
   }
 
   #hyperlinks {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background: $opaqueBlackBg,
       url(../assets/imgs/oasispage1.jpg) top center no-repeat;
     background-size: cover;
   }
@@ -1033,7 +1085,7 @@ nav {
   }
 
   #hardToBelieve {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background: $opaqueBlackBg,
       url(../assets/imgs/advertiserpage1.jpg) top center no-repeat;
     background-size: cover;
   }
@@ -1069,7 +1121,7 @@ nav {
   }
 
   #hardToBelieve {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background: $opaqueBlackBg,
       url(../assets/imgs/advertiserpage1.jpg) top center no-repeat;
     background-size: cover;
   }
@@ -1146,7 +1198,7 @@ nav {
   }
 
   #betterFuture {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background: $opaqueBlackBg,
       url(../assets/imgs/advertiserpage2.jpg) top center no-repeat;
     background-size: cover;
   }
@@ -1329,7 +1381,7 @@ nav {
   @media only screen and (max-width: 760px) {
     > div {
       text-align: center !important;
-      padding: 5% 0;
+      padding: 5%;
 
       #email-container {
         display: flex;

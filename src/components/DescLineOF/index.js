@@ -40,6 +40,7 @@ class DescLineOF extends React.Component {
                 playsInline
                 muted={true}
                 // autoPlay={true}
+                loop={true}
                 preload="auto"
                 src={videoSrc[0]}
                 ref="player"

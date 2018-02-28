@@ -61,7 +61,7 @@ class Header extends React.Component {
       <nav className="navbar navbar-expand-md navbar-dark" style={navStyle}>
         <WindowResizeListener onResize={this.handleResize} />
         <Link to="/" id="navbar-logo">
-          <img src={logo} alt="Advir-Logo" />
+          <img src={logo} alt="Advir-Logo" onClick={this.handleClick} />
         </Link>
 
         <Hamburger handleHamburger={this.handleHamburger} />
