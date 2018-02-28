@@ -376,6 +376,8 @@ $horizontalGradient: linear-gradient(
   }
 
   @media only screen and (max-width: 760px) {
+    padding-right: 10%;
+
     .description {
       text-align: center;
       a {
