@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 import { Player } from "video-react";
 
 import laptopBase from "../../assets/imgs/laptopBase.png";
-import logo from "../../assets/imgs/logo-white.jpg";
+import logo from "../../assets/imgs/logo-white.png";
 
 const DescLineOF = ({
   title,
