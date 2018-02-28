@@ -13,9 +13,10 @@ export const HowWorks = ({ videoSrc }) => (
     <VideoBg videoSrc={videoSrc} videoType="webm" />
     <div className="container">
       <h3 className="st">Monetizing VR and AR with ads that don't suck</h3>
+      <br />
       <h4 className="mb">
-        Place non-intrusive, programmatic product placements within <br />
-        your content and start generating revenues in minutes
+        Place non-intrusive, programmatic product placements within your content
+        and start generating revenues in minutes
       </h4>
       <br />
       <ScrollLink
@@ -213,7 +214,7 @@ export const Discover = ({ image }) => (
         </h4>
       </div>
       <div className="col-sm-12 col-md-4">
-        <h3 className="st">Omni-channel ecosystem</h3>
+        <h3 className="st">Omni-channel</h3>
         <h4 className="mb">
           Share consumer insights with advertisers, to enrich profiles and
           create lookalike audiences outside of VR/AR.

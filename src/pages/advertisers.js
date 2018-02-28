@@ -16,6 +16,9 @@ import CircleText from "../components/CircleText";
 import howWorksBg from "../assets/imgs/advertiserpage2.jpg";
 import Advertisers_bg from "../assets/vids/Advertisers_bg.webm";
 import pledgelogo_2 from "../assets/imgs/pledgelogo_2.png";
+import yahoo from "../assets/imgs/yahoo_logo_t.png";
+import aol from "../assets/imgs/aol-logo-vector.png";
+import bidswitch from "../assets/imgs/bidswitch_logo.png";
 import laptop from "../assets/imgs/Advir_devPlatform4.png";
 
 // Images for Carousels
@@ -43,9 +46,13 @@ const betterFutureDesc = () => (
       ads in immersive technologies.
     </h5>
     <br />
-    <Link to="/" className="btn white-btn">
+    <a
+      href="https://www.vrarpledge.org/"
+      target="_blank"
+      className="btn white-btn"
+    >
       Learn more
-    </Link>
+    </a>
   </div>
 );
 
@@ -93,12 +100,11 @@ const Advertisers = () => (
     <div id="yourBrand" className="first-show">
       <VideoBg videoSrc={Advertisers_bg} videoType="webm" />
       <div className="container">
-        <h3 className="st">Your brand, immersed.</h3>
+        <h3 className="st">Your brand, immersed.</h3> <br />
         <h4 className="mb">
-          Buy VR/AR inventory programmatically through DSPs you already <br />
-          use. Reach an engaged audience with standardized ad units, <br />
-          access gaze tracking data, and get ready for the immersive <br />
-          revolution.
+          Buy VR/AR inventory programmatically through DSPs you already use.
+          Reach an engaged audience with standardized ad units, access gaze
+          tracking data, and get ready for the immersive revolution.
         </h4>
         <br />
         <ScrollLink
@@ -111,10 +117,9 @@ const Advertisers = () => (
         </ScrollLink>
       </div>
       <span className="cc">
-        <img src={pledgelogo_2} />
-        <img src={pledgelogo_2} />
-        <img src={pledgelogo_2} />
-        <img src={pledgelogo_2} />
+        <img src={yahoo} />
+        <img src={aol} />
+        <img src={bidswitch} />
       </span>
     </div>
 
@@ -244,7 +249,7 @@ const Advertisers = () => (
             text="POSITIVE FEEDBACK"
           />
           <div>
-            <h3 className="st">A geat experience</h3>
+            <h3 className="st">A great experience</h3>
           </div>
           <div>
             <h4 className="mb">

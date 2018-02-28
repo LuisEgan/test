@@ -69,19 +69,22 @@ class Header extends React.Component {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
-              <Link to="/oasis" className="nav-link" onClick={this.handleClick}>
+              {/* <Link to="/oasis" className="nav-link" onClick={this.handleClick}>
                 The Oasis™
+              </Link> */}
+              <Link to="/" className="nav-link" onClick={this.handleClick}>
+                Developers
               </Link>
             </li>
-            <li className="nav-item">
-              <Link
-                to="/community"
-                className="nav-link"
-                onClick={this.handleClick}
-              >
-                Community
-              </Link>
-            </li>
+            {/* <li className="nav-item">
+                <Link
+                  to="/community"
+                  className="nav-link"
+                  onClick={this.handleClick}
+                >
+                  Community
+                </Link>
+              </li> */}
             <li className="nav-item">
               <Link
                 to="/advertisers"

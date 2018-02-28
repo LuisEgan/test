@@ -31,7 +31,7 @@ import whyAdvir3 from "../assets/imgs/why-advir-03.png";
 import native1 from "../assets/imgs/Ads/Native/img-17.jpg";
 import native2 from "../assets/imgs/Ads/Native/img-6.jpg";
 import native3 from "../assets/imgs/Ads/Native/img-9.jpg";
-import native4 from "../assets/imgs/Ads/Native/StakcAR_phone_can.png";
+import native4 from "../assets/imgs/Ads/Native/StakcAR_phone_can800.png";
 import flat1 from "../assets/imgs/Ads/Flat/img-5.jpg";
 import flat2 from "../assets/imgs/Ads/Flat/img-6.jpg";
 import flat3 from "../assets/imgs/Ads/Flat/img-9.jpg";
@@ -40,6 +40,7 @@ import flat5 from "../assets/imgs/Ads/Flat/img-15.jpg";
 import flat6 from "../assets/imgs/Ads/Flat/img-16.jpg";
 import flat7 from "../assets/imgs/Ads/Flat/img-22.jpg";
 import laptopsTri from "../assets/imgs/Advir_devPlatform_all.png";
+import black from "../assets/imgs/advir_black.png";
 
 // Videos
 import Index_bg from "../assets/vids/Index_bg.webm";
@@ -124,7 +125,7 @@ class IndexPage extends React.Component {
           <DescLineOF
             title="4. Sell"
             text="Your inventory is sold instantly to our networks of thousands of advertisers. You make money every time the user looks at it."
-            Component={step4cirle}
+            imgSrc={black}
           />
         </div>
         <DailyUsers />

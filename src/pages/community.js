@@ -34,6 +34,7 @@ const Community = () => (
     <div id="fan" className="first-show">
       <div className="container">
         <h3 className="st">We are your number one fan</h3>
+        <br />
         <h4 className="mb">
           Advir is a lot more than an advertising platform. We promote our
           <br />

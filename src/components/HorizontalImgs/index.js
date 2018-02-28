@@ -8,14 +8,14 @@ const HorizontalImgs = ({ titleText, subText, benefitText, images }) => {
 
   return (
     <div className="horizontal-images">
-      <h3 className="st">{titleText}</h3>
-      <h4 className="mb">{subText}</h4>
-      <div className="hor-imgs-container cc">{horImgs}</div>
-      {benefitText !== "" && (
+      {/* <h3 className="st">{titleText}</h3> */}
+      {/* <h4 className="mb">{subText}</h4> */}
+      {/* <div className="hor-imgs-container cc">{horImgs}</div> */}
+      {/* {benefitText !== "" && (
         <Link to="/community" className="btn white-btn">
           {benefitText}
         </Link>
-      )}
+      )} */}
       <div className="container row">
         <div className="col-sm-12 col-md-6 hor-img-dl">
           <h4 className="st">Get started</h4>

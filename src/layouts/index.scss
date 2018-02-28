@@ -263,7 +263,17 @@ $opaqueBlackBg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   background-size: cover !important;
 
   h3 {
-    font-size: 1.75rem;
+    font-size: 1.75rem !important;
+    margin: 0;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  .mb {
+    width: 50%;
+    margin: 0 auto;
   }
 
   @media only screen and (max-width: 760px) {
@@ -486,7 +496,7 @@ $opaqueBlackBg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   padding: 25% 0 15% 0;
   .img-of-img-container {
     position: absolute;
-    top: -25%;
+    top: -34%;
     width: 100%;
 
     h3 {
@@ -528,7 +538,7 @@ $opaqueBlackBg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   }
 
   .container.row {
-    padding: 5%;
+    padding: 0 5%;
 
     > div {
       padding: 2%;
@@ -577,9 +587,13 @@ $opaqueBlackBg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   h4 {
     color: black !important;
     padding: 2%;
+    padding-left: 5%;
   }
 
   @media only screen and (max-width: 760px) {
+    .borderR {
+      border-right: none;
+    }
     h3 {
       width: 50%;
       text-align: center;
@@ -624,11 +638,11 @@ $opaqueBlackBg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 
     .circleText {
       > div {
-        font-size: calc(1.7em + 1vw);
+        font-size: calc(1.2em + 1vw);
       }
       span {
         color: black !important;
-        font-size: calc(1.3em + 1.3vw);
+        font-size: calc(0.5em + 1.3vw);
       }
     }
   }
@@ -650,7 +664,7 @@ $opaqueBlackBg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     }
 
     .video-react-controls-enabled {
-      padding-top: 45% !important;
+      padding-top: 39% !important;
     }
 
     .laptop-base {
@@ -929,7 +943,7 @@ nav {
     }
 
     .btn.white-btn {
-      width: 40%;
+      width: 80%;
       margin: 2% 0;
     }
 
@@ -949,6 +963,9 @@ nav {
     }
 
     @media only screen and (max-width: 760px) {
+      .btn.white-btn {
+        width: 40%;
+      }
       .image {
         padding: 5% 0;
       }
@@ -982,11 +999,15 @@ nav {
           display: block;
           width: 50%;
           margin: auto;
-          padding: calc(4vw - 1%);
+          padding: 0 calc(5vw - 1%);
         }
 
         h3 {
           padding: 5% 0;
+        }
+
+        h4 {
+          text-align: center;
         }
       }
     }
@@ -997,6 +1018,7 @@ nav {
       .container {
         > div {
           text-align: center;
+          padding: 3% 0;
           img {
             width: 25%;
           }
@@ -1007,6 +1029,7 @@ nav {
 
   #discover {
     background-color: white;
+    padding: 14% 0 4% 0;
     .container {
       margin: auto;
       > div {
@@ -1016,6 +1039,9 @@ nav {
           color: black !important;
         }
       }
+    }
+    .img-of-img-container {
+      top: -58% !important;
     }
     @media only screen and (max-width: 760px) {
       .img-of-img-container {
@@ -1043,8 +1069,6 @@ nav {
     background: $horizontalGradientOpaque;
 
     h4 {
-      width: 70%;
-      margin: auto;
       line-height: 1.6;
     }
   }
@@ -1104,8 +1128,6 @@ nav {
     background: $horizontalGradientOpaque;
 
     h4 {
-      width: 70%;
-      margin: auto;
       line-height: 1.6;
     }
     span {
@@ -1116,6 +1138,7 @@ nav {
 
       img {
         width: 8%;
+        margin: 0 2%;
       }
     }
   }
@@ -1128,15 +1151,23 @@ nav {
 
   // THIS IS FOR THE LAST CAROUSEL
   #displayAds {
-    padding-bottom: 20%;
+    padding-bottom: 25%;
+
+    @media only screen and (max-width: 760px) {
+      padding-bottom: 45%;
+    }
   }
 
   #reporting {
     background-color: white;
-    padding: 35% 0 15% 0;
+    padding: 22% 0 10% 0;
     .img-of-img-container {
+      top: -53%;
       img {
         width: 70%;
+      }
+      h3 {
+        padding: 0 5%;
       }
     }
 
@@ -1151,10 +1182,15 @@ nav {
       padding: 0 5%;
       margin: auto;
     }
-  }
 
-  @media only screen and (max-width: 760px) {
-    #reporting {
+    @media only screen and (max-width: 760px) {
+      padding-top: 25%;
+      .img-of-img-container {
+        top: -23%;
+        h3 {
+          text-align: center;
+        }
+      }
       .container {
         text-align: center;
         h3 {
@@ -1180,6 +1216,7 @@ nav {
     }
 
     .container.row {
+      padding-top: 5%;
       > div {
         display: flex;
         flex-flow: column;
@@ -1190,8 +1227,21 @@ nav {
           position: relative;
 
           &:first-child {
-            padding: 9%;
+            padding: 5% 16%;
           }
+        }
+      }
+    }
+
+    @media only screen and (max-width: 760px) {
+      .circleText-container {
+        padding-bottom: 0 !important;
+        padding-top: 0 !important;
+      }
+
+      .container.row {
+        > div {
+          padding: 5% 0;
         }
       }
     }
@@ -1219,9 +1269,9 @@ nav {
     #downloadVid {
       padding-bottom: 5%;
       padding-top: calc(15vh - 5vw);
+      padding-left: 0;
       .videoDescription {
         padding: 0;
-        padding-left: 5%;
         align-items: flex-start;
         > div {
           margin: 0;
@@ -1264,6 +1314,12 @@ nav {
       }
     }
 
+    #supp-container {
+      a {
+        color: white;
+      }
+    }
+
     > .cc {
       width: 29%;
       padding-bottom: 5%;
@@ -1301,6 +1357,7 @@ nav {
   a {
     color: $gray !important;
     padding: 3% 0;
+    text-align: center;
   }
 
   img {

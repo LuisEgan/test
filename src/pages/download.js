@@ -54,11 +54,13 @@ const Download = () => (
         videoSrc={Publishers_bg}
         videoTitle={videoTitle}
       />
-      <div className="">
+      <div id="supp-container">
         <div>
           <h3 className="st">Need support?</h3>
           <br />
-          <h4 className="mb">integration@advir.co</h4>
+          <h4 className="mb">
+            <a href="mailto:contact@advir.co">contact@advir.co</a>{" "}
+          </h4>
         </div>
       </div>
     </div>
