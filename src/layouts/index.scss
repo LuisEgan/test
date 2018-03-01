@@ -128,7 +128,8 @@ a {
   // font-size: 14px;
   font-weight: bold;
   color: #000000;
-  font-size: calc(0.5em + 1.4vw);
+  // font-size: calc(0.5em + 1.4vw);
+  font-size: 1.2em;
 }
 
 .mb {
@@ -138,8 +139,9 @@ a {
   font-style: normal;
   // font-size: 12px;
   color: #a8afb9;
+  line-height: 1.4;
   // letter-spacing: 1.2px;
-  font-size: calc(0.3em + 0.7vw);
+  // font-size: calc(0.3em + 0.7vw);
   font-size: 1em;
 }
 
@@ -403,7 +405,6 @@ $opaqueBlackBg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   }
 
   .description {
-    font-size: 0.8em;
     padding-top: 5%;
     padding-right: 0;
     padding-left: 0;
@@ -589,13 +590,13 @@ $opaqueBlackBg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     font-weight: bold;
     padding: 5%;
     width: 45%;
+    padding-left: 5%;
   }
 
   h3,
   h4 {
     color: black !important;
     padding: 2%;
-    padding-left: 5%;
   }
 
   @media only screen and (max-width: 760px) {
@@ -646,7 +647,7 @@ $opaqueBlackBg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   }
   @media only screen and (max-width: 760px) {
     &:first-child {
-      padding: 17% !important;
+      padding: 22% !important;
     }
 
     .circleText {
@@ -721,7 +722,7 @@ nav {
       margin: 0;
       width: 8vw;
       max-width: 200px;
-      min-width: 120px;
+      min-width: 100px;
     }
   }
 
@@ -1047,7 +1048,7 @@ nav {
     .container {
       margin: auto;
       > div {
-        padding: 2% 7%;
+        padding: 2.5vh 3%;
         h3,
         h4 {
           color: black !important;

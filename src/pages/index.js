@@ -43,7 +43,8 @@ import laptopsTri from "../assets/imgs/Advir_devPlatform_all.png";
 import black from "../assets/imgs/advir_black.png";
 
 // Videos
-import Index_bg from "../assets/vids/Index_bg.webm";
+import Index_bgW from "../assets/vids/Index_bg.webm";
+import Index_bg from "../assets/vids/Index_bg.mp4";
 import installVidW from "../assets/vids/Unity_installAdmix600.webm";
 import installVid from "../assets/vids/Unity_installAdmix600.mp4";
 import configVidW from "../assets/vids/platformAdmix600.webm";
@@ -95,7 +96,10 @@ class IndexPage extends React.Component {
   render() {
     return (
       <div id="home">
-        <HowWorks videoSrc={Index_bg} />
+        <HowWorks
+          videoSrc={[Index_bgW, Index_bg]}
+          videoType={["webm", "mp4"]}
+        />
         <DescVid
           videoName="firstAd"
           VideoDescription={firstAdVidDesc}

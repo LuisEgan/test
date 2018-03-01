@@ -43,7 +43,7 @@ const hyperlinksVidDesc = () => (
 const Oasis = () => (
   <div id="oasis">
     <div id="metaverse" className="first-show">
-      <VideoBg videoSrc={Publishers_bg} videoType="webm" />
+      <VideoBg videoSrc={[Publishers_bg]} videoType={["webm"]} />
       <div className="container">
         <h3 className="st">The metaverse is here</h3>
         <br />

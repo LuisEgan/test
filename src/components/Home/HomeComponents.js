@@ -8,9 +8,9 @@ import VideoBg from "../VideoBg";
 import * as Scroll from "react-scroll";
 const ScrollLink = Scroll.Link;
 
-export const HowWorks = ({ videoSrc }) => (
+export const HowWorks = ({ videoSrc, videoType }) => (
   <div id="how-works" className="first-show">
-    <VideoBg videoSrc={videoSrc} videoType="webm" />
+    <VideoBg videoSrc={videoSrc} videoType={videoType} />
     <div className="container">
       <h3 className="st">Monetizing VR and AR with ads that don't suck</h3>
       <br />
@@ -165,27 +165,27 @@ export const WhyAdvir = ({ icons }) => (
     <h3 className="st">Why Admix</h3>
     <div className="container row">
       <div className="col-sm-12 col-md-4">
-        <img src={icons[0]} />
-        <h3 className="st">Non-intrusive</h3>
+        <img src={icons[1]} />
+        <h3 className="st">Developer first</h3>
         <h4 className="mb">
-          You keep complete control over the ads displayed in your experience,
-          so it always stays 100% relevant.
+          Content first, ads second. We are here to make you successful, not the
+          other way around.
         </h4>
       </div>
       <div className="col-sm-12 col-md-4">
-        <img src={icons[1]} />
-        <h3 className="st">Programmatic</h3>
+        <img src={icons[0]} />
+        <h3 className="st">Non-intrusive</h3>
         <h4 className="mb">
-          We sell your inventory to the largest advertising networks to
-          guarantee quick revenue at scale.
+          You keep control over the ads displayed in your experience, so it
+          always stays 100% relevant.
         </h4>
       </div>
       <div className="col-sm-12 col-md-4">
         <img src={icons[2]} />
-        <h3 className="st">Open API</h3>
+        <h3 className="st">Programmatic</h3>
         <h4 className="mb">
-          Connect services to Admix via our open API, or publish your own tools
-          to our marketplace.
+          We sell your inventory to the largest advertising networks to
+          guarantee quick revenue at scale.
         </h4>
       </div>
     </div>
@@ -199,25 +199,32 @@ export const Discover = ({ image }) => (
       <img src={image} />
     </div>
     <div className="container row">
-      <div className="col-sm-12 col-md-4">
-        <h3 className="st">Advertiser filter</h3>
+      <div className="col-sm-12 col-md-3">
+        <h3 className="st">Easy to use</h3>
         <h4 className="mb">
-          Before running a campaign, tag inventory to attract the right
-          advertiser and keep the ads relevant to the content.
+          Manage your campaigns from our web console. Generate revenue in
+          minutes.
         </h4>
       </div>
-      <div className="col-sm-12 col-md-4">
-        <h3 className="st">Data analysis</h3>
+      <div className="col-sm-12 col-md-3">
+        <h3 className="st">Filter advertisers</h3>
+        <h4 className="mb">
+          Tag inventory to attract the right advertiser and keep the ads
+          relevant to the content.
+        </h4>
+      </div>
+      <div className="col-sm-12 col-md-3">
+        <h3 className="st">Analyse campaigns</h3>
         <h4 className="mb">
           Visualise gaze-tracking reports of your past campaigns via our
-          partners’ tools Retinad and Cognitive VR.
+          reporting tools.
         </h4>
       </div>
-      <div className="col-sm-12 col-md-4">
-        <h3 className="st">Omni-channel</h3>
+      <div className="col-sm-12 col-md-3">
+        <h3 className="st">Optimize revenue</h3>
         <h4 className="mb">
-          Share consumer insights with advertisers, to enrich profiles and
-          create lookalike audiences outside of VR/AR.
+          Gain consumer insights, and optimize the position of your ads to
+          maximize revenue.
         </h4>
       </div>
     </div>
