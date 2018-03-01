@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Advir.co"
+    title: "Admix"
   },
   plugins: [
     "gatsby-plugin-react-helmet",
