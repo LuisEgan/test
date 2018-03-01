@@ -37,19 +37,16 @@ const VideoBg = () => (
         <input type="submit" className="btn" value="ok" />
       </div>
       <div id="sn-buttons" className="cc">
-        <a href="https://www.facebook.com/" target="_blank">
+        <a>
           <i className="fab fa-facebook-f" />
         </a>
-        <a href="https://www.facebook.com/" target="_blank">
+        <a>
           <i className="fab fa-twitter" />
         </a>
-        <a href="https://www.facebook.com/" target="_blank">
+        <a>
           <i className="fab fa-instagram" />
         </a>
-        <a
-          href="https://www.youtube.com/channel/UCi_pRGJbH2vFWEgfTEw5QGQ"
-          target="_blank"
-        >
+        <a>
           <i className="fab fa-youtube" />
         </a>
       </div>
