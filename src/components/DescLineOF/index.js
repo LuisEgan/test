@@ -39,12 +39,15 @@ class DescLineOF extends React.Component {
               <Player
                 playsInline
                 muted={true}
-                // autoPlay={true}
+                autoPlay={true}
                 loop={true}
                 preload="auto"
-                src={videoSrc[0]}
                 ref="player"
-              />
+              >
+                {videoSrc.map((src, i) => {
+                  return <source src={src} type={`video/${videoType[i]}`} />;
+                })}
+              </Player>
               // <video loop autoPlay muted playsInline poster={logo}>
               //   {videoSrc.map((src, i) => {
               //     return <source src={src} type={`video/${videoType[i]}`} />;
