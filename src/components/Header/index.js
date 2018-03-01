@@ -105,7 +105,7 @@ class Header extends React.Component {
                 className="nav-link"
                 onClick={this.handleClick}
               >
-                Download Advir
+                Download Admix
               </Link>
             </li>
             <li className="nav-item">

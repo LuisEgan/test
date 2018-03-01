@@ -8,7 +8,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: "./src/assets/imgs/advir-icon.png",
+        logo: "./src/assets/imgs/admixLogo.png",
         injectHTML: true,
         icons: {
           android: true,

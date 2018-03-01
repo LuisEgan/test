@@ -20,16 +20,33 @@ import yahoo from "../assets/imgs/yahoo_logo_t.png";
 import aol from "../assets/imgs/aol-logo-vector.png";
 import bidswitch from "../assets/imgs/bidswitch_logo.png";
 import laptop from "../assets/imgs/Advir_devPlatform4.png";
+import native1 from "../assets/imgs/Ads/Native/web1.jpg";
+import native2 from "../assets/imgs/Ads/Native/web3.jpg";
+import native3 from "../assets/imgs/Ads/Native/web4.jpg";
+import native4 from "../assets/imgs/Ads/Native/web7.jpg";
+import flat1 from "../assets/imgs/Ads/Flat_Banner/web5.jpg";
+import flat2 from "../assets/imgs/Ads/Flat_Banner/web6.jpg";
+import flat3 from "../assets/imgs/Ads/Flat_Banner/web8.jpg";
+import flat4 from "../assets/imgs/Ads/Flat_Banner/web9.jpg";
+import flat5 from "../assets/imgs/Ads/Flat_Banner/web10.jpg";
+import flat6 from "../assets/imgs/Ads/Flat_Banner/web11.jpg";
+import flat7 from "../assets/imgs/Ads/Flat_Banner/web12.jpg";
+
+import flatV1 from "../assets/imgs/Ads/Flat_Video/web2.jpg";
+import flatV2 from "../assets/imgs/Ads/Flat_Video/web13.jpg";
 
 // Images for Carousels
 const carouselImgs = [howWorksBg];
+const nativeCarouselImgs = [native1, native2, native3, native4];
+const flatCarouselImgs = [flat1, flat2, flat3, flat4, flat5, flat6, flat7];
+const flatVCarouselImgs = [flatV1, flatV2];
 
 const hardDesc = () => (
   <div>
     <h3 className="st">So simple that it is hard to believe</h3>
     <br />
     <h5 className="mb">
-      Advir is the first Supply Side Platform for VR/AR aggregating inventory
+      Admix is the first Supply Side Platform for VR/AR aggregating inventory
       across apps. That inventory supports IAB standards formats, and is listed
       on Demand Side Partners you probably already use. That means that for you,
       the brand it’s business as usual.
@@ -151,17 +168,17 @@ const Advertisers = () => (
     <DescCarousel
       carouselName="nativePlacements"
       CarouselDescription={nativePlacementsDesc}
-      images={carouselImgs}
+      images={nativeCarouselImgs}
     />
     <DescCarousel
       carouselName="videoAds"
       CarouselDescription={videoAdsDesc}
-      images={carouselImgs}
+      images={flatVCarouselImgs}
     />
     <DescCarousel
       carouselName="displayAds"
       CarouselDescription={displayAdsDesc}
-      images={carouselImgs}
+      images={flatCarouselImgs}
     />
 
     <div id="reporting" className="img-of">
@@ -173,7 +190,7 @@ const Advertisers = () => (
         <div className="col-sm-12 col-md-3">
           <h3 className="st">Gaze tracking</h3>
           <h4 className="mb">
-            Tracking where people looks, Advir validates impressions that have
+            Tracking where people looks, Admix validates impressions that have
             actually been seen by a human – not bots!.
           </h4>
         </div>
@@ -195,7 +212,7 @@ const Advertisers = () => (
           <h3 className="st">Omni-channel</h3>
           <h4 className="mb">
             Create lookalike audiences outside of VR/AR, enriching your first
-            party data with insights from Advir.
+            party data with insights from Admix.
           </h4>
         </div>
       </div>

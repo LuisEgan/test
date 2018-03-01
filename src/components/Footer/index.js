@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
 
-import advirBlack from "../../assets/imgs/advir_black.png";
+import admix from "../../assets/imgs/admix.png";
 import "../../assets/css/fontAwesome/fontawesome-all.min.css";
 
 const sendPulseForm = (
@@ -14,10 +14,10 @@ const sendPulseForm = (
 const VideoBg = () => (
   <div id="footer" className="row">
     <div className="col-sm-12 col-md-3">
-      <img src={advirBlack} />
-      <span className="mb">2018 © Advir</span>
+      <img src={admix} />
+      <span className="mb">2018 © Admix</span>
       <Link to="/download" className="btn">
-        Download Advir
+        Download Admix
       </Link>
     </div>
     <div className="col-sm-12 col-md-3">
@@ -46,7 +46,10 @@ const VideoBg = () => (
         <a href="https://www.facebook.com/" target="_blank">
           <i className="fab fa-instagram" />
         </a>
-        <a href="https://www.facebook.com/" target="_blank">
+        <a
+          href="https://www.youtube.com/channel/UCi_pRGJbH2vFWEgfTEw5QGQ"
+          target="_blank"
+        >
           <i className="fab fa-youtube" />
         </a>
       </div>

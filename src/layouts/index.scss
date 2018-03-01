@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab");
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../assets/fonts/Roboto-Thin.ttf") format("truetype");
+}
+
 /******************************************************/
 /*********************MIXINS***************************/
 /******************************************************/
@@ -128,13 +133,14 @@ a {
 
 .mb {
   //main body
-  font-family: "Roboto";
+  font-family: "Roboto-Thin", "Roboto";
   font-weight: 100;
   font-style: normal;
   // font-size: 12px;
   color: #a8afb9;
   // letter-spacing: 1.2px;
   font-size: calc(0.3em + 0.7vw);
+  font-size: 1em;
 }
 
 .bt {
@@ -464,8 +470,10 @@ $opaqueBlackBg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
         margin: auto;
 
         .carousel-item {
+          border-radius: 10px;
           img {
-            height: 300px;
+            height: 250px;
+            border-radius: 10px;
           }
         }
       }

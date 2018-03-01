@@ -37,7 +37,7 @@ export const firstAdVidDesc = () => (
     <h3 className="st">The first platform build for VR/AR</h3>
     <br />
     <h5 className="mb">
-      Advir enables you to create, manage and sell your AR/VR inventory in
+      Admix enables you to create, manage and sell your AR/VR inventory in
       minutes, so you can focus on what you do best: creating great content.
     </h5>
     <br />
@@ -108,7 +108,7 @@ export class DailyUsers extends React.Component {
           </div>
           <div id="btn-container" className="col-sm-12">
             <Link to="/download" className="btn">
-              Download Advir
+              Download Admix
             </Link>
           </div>
         </div>
@@ -148,10 +148,10 @@ export const introOasis = () => (
     <h3 className="st">Introducing the Oasis™</h3>
     <br />
     <h5 className="mb">
-      Without hyperlinks, the web would be a static directory. The Oasis is a 3
-      dimensional version of the hyperlink, enabling users to travel across a
-      fragmented ecosystem, increasing content discovery and pushing the
-      industry forward.
+      Our most advanced unit yet. Create portals in your content to enable mind
+      blowing metaverse travel towards other VR apps. Get paid every for every
+      outbound travel, or acquire users with inbound. Available as part of the
+      Admix solution.
     </h5>
     <br />
     <Link to="/oasis" className="btn white-btn">
@@ -162,7 +162,7 @@ export const introOasis = () => (
 
 export const WhyAdvir = ({ icons }) => (
   <div id="whyAdvir">
-    <h3 className="st">Why Advir</h3>
+    <h3 className="st">Why Admix</h3>
     <div className="container row">
       <div className="col-sm-12 col-md-4">
         <img src={icons[0]} />
@@ -184,7 +184,7 @@ export const WhyAdvir = ({ icons }) => (
         <img src={icons[2]} />
         <h3 className="st">Open API</h3>
         <h4 className="mb">
-          Connect services to Advir via our open API, or publish your own tools
+          Connect services to Admix via our open API, or publish your own tools
           to our marketplace.
         </h4>
       </div>

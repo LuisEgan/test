@@ -24,20 +24,12 @@ const downloadVidDesc = () => (
         <Link className="btn white-btn" to="/">
           Advir for Unity
         </Link>
-        <h4 className="mb">
-          V 1.0.1
-          <br />Unity 2107.f.1.10 and above
-        </h4>
       </div>
       <div>
         <img src={Unreal} />
         <Link className="btn white-btn" to="/">
           Advir for Unreal
         </Link>
-        <h4 className="mb">
-          V 1.0.1
-          <br />Unity 2107.f.1.10 and above
-        </h4>
       </div>
     </div>
   </div>

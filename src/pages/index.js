@@ -28,17 +28,17 @@ import howWorksBg from "../assets/imgs/advertiserpage2.jpg";
 import whyAdvir1 from "../assets/imgs/why-advir-01.png";
 import whyAdvir2 from "../assets/imgs/why-advir-02.png";
 import whyAdvir3 from "../assets/imgs/why-advir-03.png";
-import native1 from "../assets/imgs/Ads/Native/img-17.jpg";
-import native2 from "../assets/imgs/Ads/Native/img-6.jpg";
-import native3 from "../assets/imgs/Ads/Native/img-9.jpg";
-import native4 from "../assets/imgs/Ads/Native/StakcAR_phone_can800.png";
-import flat1 from "../assets/imgs/Ads/Flat/img-5.jpg";
-import flat2 from "../assets/imgs/Ads/Flat/img-6.jpg";
-import flat3 from "../assets/imgs/Ads/Flat/img-9.jpg";
-import flat4 from "../assets/imgs/Ads/Flat/img-10.jpg";
-import flat5 from "../assets/imgs/Ads/Flat/img-15.jpg";
-import flat6 from "../assets/imgs/Ads/Flat/img-16.jpg";
-import flat7 from "../assets/imgs/Ads/Flat/img-22.jpg";
+import native1 from "../assets/imgs/Ads/Native/web1.jpg";
+import native2 from "../assets/imgs/Ads/Native/web3.jpg";
+import native3 from "../assets/imgs/Ads/Native/web4.jpg";
+import native4 from "../assets/imgs/Ads/Native/web7.jpg";
+import flat1 from "../assets/imgs/Ads/Flat_Banner/web5.jpg";
+import flat2 from "../assets/imgs/Ads/Flat_Banner/web6.jpg";
+import flat3 from "../assets/imgs/Ads/Flat_Banner/web8.jpg";
+import flat4 from "../assets/imgs/Ads/Flat_Banner/web9.jpg";
+import flat5 from "../assets/imgs/Ads/Flat_Banner/web10.jpg";
+import flat6 from "../assets/imgs/Ads/Flat_Banner/web11.jpg";
+import flat7 from "../assets/imgs/Ads/Flat_Banner/web12.jpg";
 import laptopsTri from "../assets/imgs/Advir_devPlatform_all.png";
 import black from "../assets/imgs/advir_black.png";
 
@@ -104,7 +104,7 @@ class IndexPage extends React.Component {
         <div id="steps">
           <DescLineOF
             title="1. Install"
-            text="Download and instlal Advir for your favorite game engine and join a community of 150+ VR/AR developers."
+            text="Download and instlal Admix for your favorite game engine and join a community of 150+ VR/AR developers."
             videoSrc={installVids}
             videoType={["webm", "mp4"]}
           />
