@@ -29,7 +29,7 @@ const sendPulsePopUp = (
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Advir.co"
+      title="Admix"
       meta={[
         { name: "description", content: "Advir website" },
         { name: "keywords", content: "VR, AR, Advir, advertisement" }
