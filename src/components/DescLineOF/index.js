@@ -27,7 +27,7 @@ class DescLineOF extends React.Component {
           <span className="mb">{text}</span>
           {title === "1. Install" && (
             <Link to="/download" className="nav-link btn white-btn">
-              Download Advir
+              Download Admix
             </Link>
           )}
         </div>

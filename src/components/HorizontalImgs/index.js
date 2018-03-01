@@ -20,7 +20,7 @@ const HorizontalImgs = ({ titleText, subText, benefitText, images }) => {
         <div className="col-sm-12 col-md-6 hor-img-dl">
           <h4 className="st">Get started</h4>
           <Link to="/download" className="btn white-btn">
-            Download Advir
+            Download Admix
           </Link>
         </div>
         <div className="col-sm-12 col-md-6">

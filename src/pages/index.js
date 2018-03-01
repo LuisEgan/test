@@ -104,7 +104,7 @@ class IndexPage extends React.Component {
         <div id="steps">
           <DescLineOF
             title="1. Install"
-            text="Download and instlal Admix for your favorite game engine and join a community of 150+ VR/AR developers."
+            text="Download and install Admix for your favorite game engine and join a community of 150+ VR/AR developers."
             videoSrc={installVids}
             videoType={["webm", "mp4"]}
           />
