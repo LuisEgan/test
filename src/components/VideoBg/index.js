@@ -8,7 +8,7 @@ const VideoBg = ({ videoSrc, videoType }) => {
       <video loop muted autoPlay className="videoBg">
         {/* <source src={videoSrc} type={`video/${videoType}`} /> */}
         {videoSrc.map((src, i) => {
-          return <source src={src} type={`video/${videoType[i]}`} />;
+          return <source src={src} type={`video/${videoType[i]}`} key={src} />;
         })}
       </video>
     </div>

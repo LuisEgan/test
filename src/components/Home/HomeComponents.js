@@ -34,7 +34,7 @@ export const HowWorks = ({ videoSrc, videoType }) => (
 
 export const firstAdVidDesc = () => (
   <div>
-    <h3 className="st">The first platform build for VR/AR</h3>
+    <h3 className="st">The first monetization platform build for VR/AR</h3>
     <br />
     <h5 className="mb">
       Admix enables you to create, manage and sell your AR/VR inventory in
@@ -80,7 +80,7 @@ export class DailyUsers extends React.Component {
           <div id="bar-container" className="col-sm-12 col-md-8 cc">
             <div>
               <h4 className="pt no-select">
-                How many daily users does your VR app has?
+                How many daily users does your VR app have?
               </h4>
               <div id="bar">
                 <Slider

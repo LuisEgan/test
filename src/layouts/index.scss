@@ -7,6 +7,35 @@
 }
 
 /******************************************************/
+/**********************GLOBALS*************************/
+/******************************************************/
+
+$mobileBreakpoint: 830px;
+
+$blueAdvir: #157cc1;
+$gray: #b3b3b3;
+$grayLighter: #e7e7e7;
+
+$purpleBlue: #4b44c5;
+$blueLight: #5077e1;
+$cyan: #37caca;
+$green: #3ad07f;
+
+$horizontalGradientOpaque: linear-gradient(
+  to right,
+  rgba(75, 68, 197, 0.7),
+  rgba(55, 202, 202, 0.7)
+);
+
+$horizontalGradient: linear-gradient(
+  to right,
+  rgb(75, 68, 197),
+  rgb(55, 202, 202)
+);
+
+$opaqueBlackBg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+
+/******************************************************/
 /*********************MIXINS***************************/
 /******************************************************/
 @mixin border-radius($radius) {
@@ -161,7 +190,7 @@ a {
   color: #4b44c5;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: $mobileBreakpoint) {
   .st {
     font-size: calc(0.8em + 1.4vw);
   }
@@ -170,33 +199,6 @@ a {
     font-size: calc(0.6em + 1vw);
   }
 }
-
-/******************************************************/
-/**********************GLOBALS*************************/
-/******************************************************/
-
-$blueAdvir: #157cc1;
-$gray: #b3b3b3;
-$grayLighter: #e7e7e7;
-
-$purpleBlue: #4b44c5;
-$blueLight: #5077e1;
-$cyan: #37caca;
-$green: #3ad07f;
-
-$horizontalGradientOpaque: linear-gradient(
-  to right,
-  rgba(75, 68, 197, 0.7),
-  rgba(55, 202, 202, 0.7)
-);
-
-$horizontalGradient: linear-gradient(
-  to right,
-  rgb(75, 68, 197),
-  rgb(55, 202, 202)
-);
-
-$opaqueBlackBg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 
 /******************************************************/
 /**********************GENERAL*************************/
@@ -251,7 +253,7 @@ $opaqueBlackBg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     left: -100%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: $mobileBreakpoint) {
   .videoBg-container {
     background: url(../assets/imgs/advertiserpage2.jpg) center center / cover
       no-repeat;
@@ -284,7 +286,15 @@ $opaqueBlackBg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     margin: 0 auto;
   }
 
-  @media only screen and (max-width: 760px) {
+  a {
+    color: $blueAdvir !important;
+  }
+
+  @media only screen and (max-width: $mobileBreakpoint) {
+    .mb {
+      width: 80%;
+      margin: 0 auto;
+    }
     h4 {
       font-size: calc(0.7em + 0.7vw);
     }
@@ -365,7 +375,7 @@ $opaqueBlackBg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     }
   }
 
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: $mobileBreakpoint) {
     padding: 7% 5%;
 
     .videoDescription {
@@ -419,7 +429,7 @@ $opaqueBlackBg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     }
   }
 
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: $mobileBreakpoint) {
     padding-right: 10%;
 
     .description {
@@ -459,8 +469,8 @@ $opaqueBlackBg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 
 .description-carousel {
   background: $horizontalGradient;
-  padding-bottom: 0;
-  padding-top: 0;
+  padding-bottom: 1.3vh;
+  padding-top: 1.3vh;
   .carousel-container {
     padding: 5%;
 
@@ -473,7 +483,6 @@ $opaqueBlackBg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
         .carousel-item {
           @include border-radius(10px);
           img {
-            height: 250px;
             @include border-radius(10px);
           }
         }
@@ -486,7 +495,7 @@ $opaqueBlackBg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     }
   }
 }
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: $mobileBreakpoint) {
   .description-carousel {
     padding: 3%;
     .carouselDescription {
@@ -567,7 +576,7 @@ $opaqueBlackBg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     }
   }
 
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: $mobileBreakpoint) {
     padding: 7% 5%;
   }
 }
@@ -599,7 +608,7 @@ $opaqueBlackBg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     padding: 2%;
   }
 
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: $mobileBreakpoint) {
     .borderR {
       border-right: none;
     }
@@ -645,7 +654,7 @@ $opaqueBlackBg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
       font-size: calc(0.75em + 0.2vw);
     }
   }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: $mobileBreakpoint) {
     &:first-child {
       padding: 22% !important;
     }
@@ -728,9 +737,16 @@ nav {
 
   #navbarSupportedContent {
     ul {
+      margin: 0 auto;
+
       li {
+        &:first-child {
+          a {
+            margin-left: 0;
+          }
+        }
         a {
-          margin-left: 3vw;
+          margin-left: 5vw;
           font-size: 1.2vw;
           color: white;
           text-align: center;
@@ -761,11 +777,16 @@ nav {
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 767px) {
   nav {
     #navbarSupportedContent {
       > ul {
         > li {
+          &:first-child {
+            a {
+              margin-left: 5vw;
+            }
+          }
           a {
             color: white !important;
             background-color: transparent !important;
@@ -799,7 +820,7 @@ nav {
     background: $opaqueBlackBg,
       url(../assets/imgs/developerpage1.jpg) top center no-repeat;
     background-size: cover;
-    @media only screen and (max-width: 760px) {
+    @media only screen and (max-width: $mobileBreakpoint) {
       padding: 7% 5%;
       .videoDescription {
         text-align: center;
@@ -814,7 +835,7 @@ nav {
     background-color: white;
 
     .container {
-      min-height: 200px;
+      min-height: 40vh;
       margin: auto;
 
       #bar-container {
@@ -910,7 +931,7 @@ nav {
         }
       }
 
-      @media only screen and (max-width: 760px) {
+      @media only screen and (max-width: 767px) {
         #making-container {
           padding: 10%;
         }
@@ -977,7 +998,7 @@ nav {
       }
     }
 
-    @media only screen and (max-width: 760px) {
+    @media only screen and (max-width: $mobileBreakpoint) {
       .btn.white-btn {
         width: 40%;
       }
@@ -1000,7 +1021,7 @@ nav {
   #whyAdvir {
     background: $horizontalGradient;
     padding: 5%;
-    padding-bottom: 25%;
+    padding-bottom: 27%;
     h3 {
       margin: auto;
       @include width-fit-content();
@@ -1012,9 +1033,9 @@ nav {
       > div {
         img {
           display: block;
-          width: 50%;
+          width: calc(29px + 1.5vw);
           margin: auto;
-          padding: 0 calc(5vw - 1%);
+          // padding: 0 calc(5vw - 1%);
         }
 
         h3 {
@@ -1027,15 +1048,15 @@ nav {
       }
     }
   }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: $mobileBreakpoint) {
     #whyAdvir {
-      padding-bottom: 50%;
+      padding-bottom: 30%;
       .container {
         > div {
           text-align: center;
           padding: 3% 0;
           img {
-            width: 25%;
+            // width: 25%;
           }
         }
       }
@@ -1058,11 +1079,11 @@ nav {
     .img-of-img-container {
       top: -58% !important;
     }
-    @media only screen and (max-width: 760px) {
+    @media only screen and (max-width: $mobileBreakpoint) {
       padding: 20% 0 4% 0;
 
       .img-of-img-container {
-        top: -26% !important;
+        top: -22% !important;
         text-align: center;
       }
       .container {
@@ -1138,7 +1159,7 @@ nav {
 /******************************************************/
 
 #advertisers {
-  margin-top: -15vh;
+  margin-top: -20vh;
 
   #yourBrand {
     // background: $horizontalGradientOpaque,
@@ -1171,7 +1192,7 @@ nav {
   #displayAds {
     padding-bottom: 25%;
 
-    @media only screen and (max-width: 760px) {
+    @media only screen and (max-width: $mobileBreakpoint) {
       padding-bottom: 45%;
     }
   }
@@ -1201,10 +1222,10 @@ nav {
       margin: auto;
     }
 
-    @media only screen and (max-width: 760px) {
+    @media only screen and (max-width: $mobileBreakpoint) {
       padding-top: 25%;
       .img-of-img-container {
-        top: -23%;
+        top: -36%;
         h3 {
           text-align: center;
         }
@@ -1254,7 +1275,7 @@ nav {
       }
     }
 
-    @media only screen and (max-width: 760px) {
+    @media only screen and (max-width: $mobileBreakpoint) {
       .circleText-container {
         padding-bottom: 0 !important;
         padding-top: 0 !important;
@@ -1350,7 +1371,7 @@ nav {
       }
     }
   }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: $mobileBreakpoint) {
     .container {
       #downloadVid {
         h3 {
@@ -1458,7 +1479,7 @@ nav {
       }
     }
   }
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: $mobileBreakpoint) {
     > div {
       text-align: center !important;
       padding: 5%;
