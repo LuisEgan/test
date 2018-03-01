@@ -22,13 +22,13 @@ const downloadVidDesc = () => (
       <div>
         <img src={Unity} />
         <Link className="btn white-btn" to="/">
-          Advir for Unity
+          Admix for Unity
         </Link>
       </div>
       <div>
         <img src={Unreal} />
         <Link className="btn white-btn" to="/">
-          Advir for Unreal
+          Admix for Unreal
         </Link>
       </div>
     </div>
