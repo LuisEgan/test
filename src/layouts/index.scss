@@ -1413,7 +1413,11 @@ nav {
   .container {
     background: $horizontalGradientOpaque;
     padding: 5%;
+    padding-top: 20vh;
     min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
   }
 }
 
