@@ -2,7 +2,6 @@ import React from "react";
 import Link from "gatsby-link";
 
 const VideoBg = ({ videoSrc, videoType }) => {
-  console.log("videoSrc: ", videoSrc);
   return (
     <div className="videoBg-container">
       <video loop muted autoPlay className="videoBg">

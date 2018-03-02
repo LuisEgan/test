@@ -40,7 +40,6 @@ class Header extends React.Component {
 
   handleResize(windowSize) {
     const { windowWidth } = windowSize;
-    console.log("windowWidth: ", windowWidth);
     const forceTransparency = windowWidth >= 768;
     this.setState({ forceTransparency });
   }
