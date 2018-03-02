@@ -1413,6 +1413,10 @@ nav {
     font-size: 1.75rem !important;
   }
 
+  iframe {
+    max-width: unset;
+  }
+
   .container {
     background: $horizontalGradientOpaque;
     padding: 5%;
