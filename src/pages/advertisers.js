@@ -79,10 +79,10 @@ const nativePlacementsDesc = () => (
     <h3 className="st">Native placements for AR and AR</h3>
     <br />
     <h5 className="mb">
-      The next generation of advertising. Whether you are in VR or AR, our
-      interactive product placements fit with your scene and are 100% non
-      intrusive. You control the brands and creative to ensure relevance, and
-      get paid on engagement.
+      The next generation of programmatic advertising. Serve 3D, dynamic product
+      placements in VR and AR. Admix’s proprietary format is compatible with the
+      IAB Native formats, so it’s business as usual for you - we can even build
+      the 3D creative for you.
     </h5>
   </div>
 );
@@ -92,10 +92,10 @@ const videoAdsDesc = () => (
     <h3 className="st">Video ads for VR</h3>
     <br />
     <h5 className="mb">
-      Whether static banners, dynamic banners, or full videos, our flat formats
-      are the easiest way to get started. Fits well everywhere and compatible
-      with millions of brands. And the best part - you get paid every time it it
-      displayed in your content!
+      Admix is the only SSP enabling you to serve videos to a captive VR
+      audience - a new way to discover content. Compatible with your existing
+      VAST tags, you can get your video campaign started in minutes from your
+      preferred DSP.
     </h5>
   </div>
 );
@@ -105,10 +105,10 @@ const displayAdsDesc = () => (
     <h3 className="st">Display ads for VR</h3>
     <br />
     <h5 className="mb">
-      Whether static banners, dynamic banners, or full videos, our flat formats
-      are the easiest way to get started. Fits well everywhere and compatible
-      with millions of brands. And the best part - you get paid every time it it
-      displayed in your content!
+      The easiest way to get started. With Admix, you are free to re-use your
+      display creatives without having to update it. It just works from your
+      preferred DSPs - like any web or mobile display campaign. We make display
+      advertising trendy again!
     </h5>
   </div>
 );
@@ -144,8 +144,12 @@ const Advertisers = () => (
       </span>
     </div>
 
-    <DescLeft descName="hardToBelieve" Description={hardDesc} />
-
+    {/* <DescLeft descName="hardToBelieve" Description={hardDesc} /> */}
+    <DescVid
+      videoName="hardToBelieve"
+      VideoDescription={hardDesc}
+      youtubeId={`-6Pm8qFu1rE`}
+    />
     <div id="statistics" className="statistics">
       <div className="container row">
         <div className="col-sm-12 col-md-4 cc borderR">

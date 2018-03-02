@@ -8,6 +8,11 @@ import VideoBg from "../VideoBg";
 import * as Scroll from "react-scroll";
 const ScrollLink = Scroll.Link;
 
+// Step 4 Assets
+import Step4_vrHeadset from "../../assets/imgs/vr_headset.png";
+import Step4_vidW from "../../assets/vids/Advertisers_bg.webm";
+import Step4_vid from "../../assets/vids/Advertisers_bg.mp4";
+
 export const HowWorks = ({ videoSrc, videoType }) => (
   <div id="how-works" className="first-show">
     <VideoBg videoSrc={videoSrc} videoType={videoType} />
@@ -34,7 +39,7 @@ export const HowWorks = ({ videoSrc, videoType }) => (
 
 export const firstAdVidDesc = () => (
   <div>
-    <h3 className="st">The first monetization platform build for VR/AR</h3>
+    <h3 className="st">The first monetization platform built for VR/AR</h3>
     <br />
     <h5 className="mb">
       Admix enables you to create, manage and sell your AR/VR inventory in
@@ -145,17 +150,16 @@ export const flatAdsCarouselDesc = () => (
 
 export const introOasis = () => (
   <div>
-    <h3 className="st">Introducing the Oasis™</h3>
+    <h3 className="st">We’d love to work with you</h3>
     <br />
     <h5 className="mb">
-      Our most advanced unit yet. Create portals in your content to enable mind
-      blowing metaverse travel towards other VR apps. Get paid every for every
-      outbound travel, or acquire users with inbound. Available as part of the
-      Admix solution.
+      We are just at the beginning of our journey, and would love to hear your
+      questions, feedback or suggestions. Admix is more than a monetization
+      solution, it’s a community - we’re making each other stronger.
     </h5>
     <br />
-    <Link to="/oasis" className="btn white-btn">
-      Learn more
+    <Link to="/contact" className="btn white-btn">
+      Get in touch
     </Link>
   </div>
 );
@@ -230,3 +234,49 @@ export const Discover = ({ image }) => (
     </div>
   </div>
 );
+
+export class Step4 extends React.Component {
+  componentDidMount() {
+    !!this.refs.player && this.refs.player.play();
+  }
+  render() {
+    const videoSrc = [Step4_vidW, Step4_vid];
+    const videoType = ["webm", "mp4"];
+    return (
+      <div id="vr-headset">
+        <img src={Step4_vrHeadset} className="no-drag" />
+        <div id="vr-video">
+          <Player
+            playsInline
+            muted={true}
+            autoPlay={true}
+            loop={true}
+            preload="auto"
+            ref="player"
+          >
+            {videoSrc.map((src, i) => {
+              return <source src={src} type={`video/${videoType[i]}`} />;
+            })}
+          </Player>
+        </div>
+      </div>
+    );
+  }
+}
+
+// export const introOasis = () => (
+//   <div>
+//     <h3 className="st">Introducing the Oasis™</h3>
+//     <br />
+//     <h5 className="mb">
+//       Our most advanced unit yet. Create portals in your content to enable mind
+//       blowing metaverse travel towards other VR apps. Get paid every for every
+//       outbound travel, or acquire users with inbound. Available as part of the
+//       Admix solution.
+//     </h5>
+//     <br />
+//     <Link to="/oasis" className="btn white-btn">
+//       Learn more
+//     </Link>
+//   </div>
+// );

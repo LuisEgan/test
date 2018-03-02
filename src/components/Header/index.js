@@ -96,7 +96,11 @@ class Header extends React.Component {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/" className="nav-link" onClick={this.handleClick}>
+              <Link
+                to="/contact"
+                className="nav-link"
+                onClick={this.handleClick}
+              >
                 Get in touch
               </Link>
             </li>

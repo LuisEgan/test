@@ -14,7 +14,9 @@ const sendPulseForm = (
 const VideoBg = () => (
   <div id="footer" className="row">
     <div className="col-sm-12 col-md-3">
-      <img src={admix} />
+      <Link to="/">
+        <img src={admix} />
+      </Link>
       <span className="mb">2018 © Admix</span>
       <Link to="/download" className="btn">
         Download Admix
@@ -27,7 +29,7 @@ const VideoBg = () => (
     </div>
     <div className="col-sm-12 col-md-3">
       {/* <Link to="/community">Community</Link> */}
-      <Link to="/">Get in touch</Link>
+      <Link to="/contact">Get in touch</Link>
     </div>
     <div className="col-sm-12 col-md-3">
       {/* {sendPulseForm} */}

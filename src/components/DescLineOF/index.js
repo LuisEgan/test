@@ -34,7 +34,7 @@ class DescLineOF extends React.Component {
         <div className="image col-sm-12 col-md-9 laptop-screen">
           {/* Priority: 1. local video, 2. youtube video and 3. Image */}
           {/* If all are provided, the local video is going to be displayed, and so on. */}
-          <div>
+          <div className="laptop-screen-wrapper">
             {!!videoSrc && (
               <Player
                 playsInline

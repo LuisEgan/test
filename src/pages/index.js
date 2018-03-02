@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
 import { Circle } from "rc-progress";
+import { Player } from "video-react";
 
 // HOME COMPONENTS
 import {
@@ -11,7 +12,8 @@ import {
   flatAdsCarouselDesc,
   introOasis,
   WhyAdvir,
-  Discover
+  Discover,
+  Step4
 } from "../components//Home/HomeComponents";
 
 // GENERAL COMPONENTS
@@ -41,6 +43,7 @@ import flat6 from "../assets/imgs/Ads/Flat_Banner/web11.jpg";
 import flat7 from "../assets/imgs/Ads/Flat_Banner/web12.jpg";
 import laptopsTri from "../assets/imgs/Advir_devPlatform_all.png";
 import black from "../assets/imgs/advir_black.png";
+import vrHeadset from "../assets/imgs/vr_headset.png";
 
 // Videos
 import Index_bgW from "../assets/vids/Index_bg.webm";
@@ -55,7 +58,7 @@ import placeVid from "../assets/vids/Unity_Admix600.mp4";
 const installVids = [installVidW, installVid];
 const placeVids = [placeVidW, placeVid];
 const configVids = [configVidW, configVid];
-
+const vidsTypes = ["webm", "mp4"];
 // Gifs
 import AdsGif from "../assets/gifs/Advertisers_bg.gif";
 
@@ -77,29 +80,26 @@ const benefitText = "Learn more about the benefits";
 const comImgs = [];
 
 // Step 4 Circle
-const step4cirle = () => {
-  return (
-    <div>
-      <CircleText
-        percent="75"
-        strokeWidth="6"
-        trailWidth="0"
-        strokeColor="#fff"
-        text=""
-      />
-      <h4 className="mb">You keep 75% of the revenues generated</h4>
-    </div>
-  );
-};
+// const step4cirle = () => {
+//   return (
+//     <div>
+//       <CircleText
+//         percent="75"
+//         strokeWidth="6"
+//         trailWidth="0"
+//         strokeColor="#fff"
+//         text=""
+//       />
+//       <h4 className="mb">You keep 75% of the revenues generated</h4>
+//     </div>
+//   );
+// };
 
 class IndexPage extends React.Component {
   render() {
     return (
       <div id="home">
-        <HowWorks
-          videoSrc={[Index_bgW, Index_bg]}
-          videoType={["webm", "mp4"]}
-        />
+        <HowWorks videoSrc={[Index_bgW, Index_bg]} videoType={vidsTypes} />
         <DescVid
           videoName="firstAd"
           VideoDescription={firstAdVidDesc}
@@ -110,26 +110,26 @@ class IndexPage extends React.Component {
             title="1. Install"
             text="Download and install Admix for your favorite game engine and join a community of 150+ VR/AR developers."
             videoSrc={installVids}
-            videoType={["webm", "mp4"]}
+            videoType={vidsTypes}
           />
           <DescLineOF
             title="2. Place"
             text="Define your inventory - areas of your content to sell to advertisers. It can be banners, videos or 3D placements. You keep the control."
             imgSrc={part1}
             videoSrc={placeVids}
-            videoType={["webm", "mp4"]}
+            videoType={vidsTypes}
             youtubeId={`-6Pm8qFu1rE`}
           />
           <DescLineOF
             title="3. Configure"
             text="Use our web platform to manage your apps, filter the most relevant advertisers, and activate your campaign."
             videoSrc={configVids}
-            videoType={["webm", "mp4"]}
+            videoType={vidsTypes}
           />
           <DescLineOF
             title="4. Sell"
-            text="Your inventory is sold instantly to our networks of thousands of advertisers. You make money every time the user looks at it."
-            imgSrc={black}
+            text="Your inventory is sold instantly to our network of advertisers. You take home 75% of the revenue paid by the advertiser every time a user looks at your ads."
+            Component={Step4}
           />
         </div>
         <DailyUsers />
