@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
-import { WindowResizeListener } from "react-window-resize-listener";
+// import { WindowResizeListener } from "react-window-resize-listener";
+import WindowSizeListener from "react-window-size-listener";
 
 import logo from "../../assets/imgs/logo-white.png";
 
@@ -59,7 +60,7 @@ class Header extends React.Component {
     const navStyle = { backgroundColor: navBgColor };
     return (
       <nav className="navbar navbar-expand-md navbar-dark" style={navStyle}>
-        <WindowResizeListener onResize={this.handleResize} />
+        <WindowSizeListener onResize={this.handleResize} />
         <Link to="/" id="navbar-logo">
           <img src={logo} alt="Advir-Logo" onClick={this.handleClick} />
         </Link>
@@ -104,13 +105,20 @@ class Header extends React.Component {
               </Link>
             </li>
             <li className="nav-item" id="download-plugin">
-              <Link
+              {/* <Link
                 to="/download"
                 className="nav-link"
                 onClick={this.handleClick}
               >
                 Download Admix
-              </Link>
+              </Link> */}
+              <a
+                className="nav-link"
+                onClick={this.handleClick}
+                sp-show-form="94097"
+              >
+                Download Admix
+              </a>
             </li>
             <li className="nav-item">
               <Link to="/" className="nav-link" onClick={this.handleClick}>

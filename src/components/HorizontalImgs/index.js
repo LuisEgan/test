@@ -17,13 +17,16 @@ const HorizontalImgs = ({ titleText, subText, benefitText, images }) => {
         </Link>
       )} */}
       <div className="container row">
-        <div className="col-sm-12 col-md-6 hor-img-dl">
+        <div className="col-sm-12 col-md-12 hor-img-dl">
           <h4 className="st">Get started</h4>
-          <Link to="/download" className="btn white-btn">
+          {/* <Link to="/download" className="btn white-btn">
             Download Admix
-          </Link>
+          </Link> */}
+          <a className="btn white-btn" sp-show-form="94097">
+            Download Admix
+          </a>
         </div>
-        <div className="col-sm-12 col-md-6">
+        {/* <div className="col-sm-12 col-md-6">
           <h4 className="st">Stay in touch</h4>
           <div className="cc">
             <input
@@ -35,7 +38,7 @@ const HorizontalImgs = ({ titleText, subText, benefitText, images }) => {
               ok
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

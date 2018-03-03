@@ -18,9 +18,12 @@ const VideoBg = () => (
         <img src={admix} />
       </Link>
       <span className="mb">2018 © Admix</span>
-      <Link to="/download" className="btn">
+      {/* <Link to="/download" className="btn">
         Download Admix
-      </Link>
+      </Link> */}
+      <a className="btn white-btn" sp-show-form="94097">
+        Download Admix
+      </a>
     </div>
     <div className="col-sm-12 col-md-3">
       <Link to="/">Developers</Link>
@@ -30,14 +33,6 @@ const VideoBg = () => (
     <div className="col-sm-12 col-md-3">
       {/* <Link to="/community">Community</Link> */}
       <Link to="/contact">Get in touch</Link>
-    </div>
-    <div className="col-sm-12 col-md-3">
-      {/* {sendPulseForm} */}
-      <span className="mb">Subscribe to newsletter</span>
-      <div id="email-container">
-        <input type="text" className="form-control" placeholder="email" />
-        <input type="submit" className="btn" value="ok" />
-      </div>
       <div id="sn-buttons" className="cc">
         <a>
           <i className="fab fa-facebook-f" />
@@ -53,6 +48,14 @@ const VideoBg = () => (
         </a>
       </div>
     </div>
+    <div className="col-sm-12 col-md-3">
+      {/* <span className="mb">Subscribe to newsletter</span> */}
+      <div id="email-container">
+        {/* <input type="text" className="form-control" placeholder="email" /> */}
+        {/* <input type="submit" className="btn" value="ok" /> */}
+      </div>
+    </div>
+    {sendPulseForm}
   </div>
 );
 

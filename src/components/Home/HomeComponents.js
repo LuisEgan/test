@@ -112,9 +112,12 @@ export class DailyUsers extends React.Component {
             </div>
           </div>
           <div id="btn-container" className="col-sm-12">
-            <Link to="/download" className="btn">
+            {/* <Link to="/download" className="btn">
               Download Admix
-            </Link>
+            </Link> */}
+            <a className="btn white-btn" sp-show-form="94097">
+              Download Admix
+            </a>
           </div>
         </div>
       </div>
@@ -255,7 +258,9 @@ export class Step4 extends React.Component {
             ref="player"
           >
             {videoSrc.map((src, i) => {
-              return <source src={src} type={`video/${videoType[i]}`} />;
+              return (
+                <source src={src} type={`video/${videoType[i]}`} key={src} />
+              );
             })}
           </Player>
         </div>

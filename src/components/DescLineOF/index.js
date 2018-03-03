@@ -26,9 +26,12 @@ class DescLineOF extends React.Component {
           <br />
           <span className="mb">{text}</span>
           {title === "1. Install" && (
-            <Link to="/download" className="nav-link btn white-btn">
+            // <Link to="/download" className="nav-link btn white-btn">
+            //   Download Admix
+            // </Link>
+            <a className="nav-link btn white-btn" sp-show-form="94097">
               Download Admix
-            </Link>
+            </a>
           )}
         </div>
         <div className="image col-sm-12 col-md-9 laptop-screen">
@@ -45,7 +48,13 @@ class DescLineOF extends React.Component {
                 ref="player"
               >
                 {videoSrc.map((src, i) => {
-                  return <source src={src} type={`video/${videoType[i]}`} />;
+                  return (
+                    <source
+                      src={src}
+                      type={`video/${videoType[i]}`}
+                      key={src}
+                    />
+                  );
                 })}
               </Player>
               // <video loop autoPlay muted playsInline poster={logo}>

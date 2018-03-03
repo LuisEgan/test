@@ -204,6 +204,12 @@ a {
 /**********************GENERAL*************************/
 /******************************************************/
 
+.sp-form-outer.sp-fixed-outer.sp-show {
+  span {
+    color: black !important;
+  }
+}
+
 .white-btn {
   color: $blueAdvir;
   background-color: white;
@@ -397,6 +403,10 @@ a {
   padding-right: 1%;
   position: relative;
 
+  a {
+    color: $blueAdvir !important;
+  }
+
   h3 {
     position: relative;
     &::before {
@@ -537,6 +547,11 @@ a {
   background: $horizontalGradient;
   padding: 5%;
   text-align: center;
+
+  a {
+    color: $blueAdvir !important;
+  }
+
   > h3,
   > h4 {
     @include width-fit-content();
@@ -776,6 +791,10 @@ nav {
           font-size: 1.2vw;
           color: white;
           text-align: center;
+
+          &:hover {
+            cursor: pointer;
+          }
         }
       }
 
@@ -1436,6 +1455,10 @@ nav {
   background-color: white;
   padding: 7% 3%;
 
+  .sp-form.sp-form-regular.sp-form-embed {
+    padding: 0;
+  }
+
   span {
     color: $gray !important;
   }
@@ -1452,6 +1475,36 @@ nav {
     margin: 0 auto;
     display: block;
     min-width: 80px;
+  }
+
+  #sn-buttons {
+    // display: flex;
+    // align-content: center;
+    // // padding: 15% 0 0;
+    // a {
+    //   padding: 0 2%;
+
+    //   &:hover {
+    //     text-decoration: none;
+    //   }
+    // }
+    i {
+      // @extend .cc;
+      // padding: 3%;
+      // margin: 0 2%;
+      // @include border-radius(100%);
+      // background-color: black;
+      // color: white;
+      font-size: 1.3em;
+      // width: 40px;
+      // height: 40px;
+
+      &:hover {
+        // cursor: pointer;
+        cursor: not-allowed;
+        // background-color: $grayLighter;
+      }
+    }
   }
 
   > div {
@@ -1479,8 +1532,8 @@ nav {
         display: flex;
         align-content: center;
         input {
-          width: 70%;
-          margin: 0;
+          // width: 70%;
+          // margin: 0;
         }
         input[type="submit"] {
           @extend .cc;
@@ -1491,39 +1544,14 @@ nav {
           padding: 1% 0;
         }
       }
-
-      #sn-buttons {
-        display: flex;
-        align-content: center;
-        padding: 15% 0 0;
-        a {
-          padding: 0 2%;
-
-          &:hover {
-            text-decoration: none;
-          }
-        }
-        i {
-          @extend .cc;
-          padding: 3%;
-          margin: 0 2%;
-          @include border-radius(100%);
-          background-color: black;
-          color: white;
-          font-size: 1.3em;
-          width: 40px;
-          height: 40px;
-
-          &:hover {
-            // cursor: pointer;
-            cursor: not-allowed;
-            background-color: $grayLighter;
-          }
-        }
-      }
     }
   }
   @media only screen and (max-width: $mobileBreakpoint) {
+    .sp-field,
+    .sp-link-wrapper {
+      text-align: center;
+    }
+
     > div {
       text-align: center !important;
       padding: 5%;
