@@ -191,7 +191,9 @@ const Advertisers = () => (
 
     <div id="reporting" className="img-of">
       <div className="img-of-img-container">
-        <h3 className="st">Stunning VR/AR reporting and analytics</h3>
+        <h3 className="st principal-st">
+          Stunning VR/AR reporting and analytics
+        </h3>
         <img src={laptop} />
       </div>
       <div className="container row">
@@ -227,7 +229,7 @@ const Advertisers = () => (
     </div>
 
     <div id="circles">
-      <h2 className="st">Pioneering engagement in VR/AR</h2>
+      <h2 className="st principal-st">Pioneering engagement in VR/AR</h2>
       <div className="container row">
         <div className="col-sm-12 col-md-4">
           <CircleText

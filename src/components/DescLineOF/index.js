@@ -8,6 +8,16 @@ import logo from "../../assets/imgs/logo-white.png";
 class DescLineOF extends React.Component {
   componentDidMount() {
     !!this.refs.player && this.refs.player.play();
+
+    let checkStart = () => {
+      if (this.refs.player) {
+        const { player } = this.refs.player.getState();
+        !player.hasStarted && this.refs.player.play();
+      }
+    };
+    checkStart = checkStart.bind(this);
+
+    setTimeout(checkStart, 0);
   }
   render() {
     const {
@@ -19,9 +29,12 @@ class DescLineOF extends React.Component {
       youtubeId,
       Component
     } = this.props;
+
+    const vrID = title === "4. Sell" ? "vrHeadsetStep" : "";
+
     return (
       <div className="container description-line-overflow-img row">
-        <div className="description  col-sm-12 col-md-3">
+        <div id={vrID} className="description  col-sm-12 col-md-3">
           <h3 className="st">{title}</h3>
           <br />
           <span className="mb">{text}</span>

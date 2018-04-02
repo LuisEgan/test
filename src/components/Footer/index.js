@@ -28,11 +28,13 @@ const VideoBg = () => (
     <div className="col-sm-12 col-md-3">
       <Link to="/">Developers</Link>
       <Link to="/advertisers">Advertisers</Link>
+      <Link to="/blog">Blog</Link>
       {/* <Link to="/oasis">The Oasis™</Link> */}
     </div>
     <div className="col-sm-12 col-md-3">
       {/* <Link to="/community">Community</Link> */}
-      <Link to="/contact">Get in touch</Link>
+      {/* <Link to="/contact">Get in touch</Link> */}
+      <a href="/contact">Get in touch</a>
       <div id="sn-buttons" className="cc">
         <a>
           <i className="fab fa-facebook-f" />
@@ -54,8 +56,8 @@ const VideoBg = () => (
         {/* <input type="text" className="form-control" placeholder="email" /> */}
         {/* <input type="submit" className="btn" value="ok" /> */}
       </div>
+      {sendPulseForm}
     </div>
-    {sendPulseForm}
   </div>
 );
 

@@ -14,95 +14,125 @@ import VideoBg from "../components/VideoBg";
 // ASSETS
 import howWorksBg from "../assets/imgs/advertiserpage2.jpg";
 import Publishers_bg from "../assets/vids/Publishers_bg.webm";
+import Oasis_bg from "../assets/vids/Oasis_bg.webm";
 import laptops from "../assets/imgs/laptops.png";
+import ss from "../assets/imgs/SS.png";
+import hf from "../assets/imgs/HF.png";
+import arrowRight from "../assets/imgs/arrowRight.png";
 
 // Vars for HorizontalImgs
 const titleText = "A collaboration between industry leaders";
 const subText =
-  "The Metaverse  transcends the interest of a single company and is built with various industry leaders.";
+   "The Metaverse  transcends the interest of a single company and is built with various industry leaders.";
 const benefitText = "";
 const comImgs = [];
 
 const hyperlinksVidDesc = () => (
-  <div>
-    <h3 className="st">Hyperlinks for virtual reality</h3>
-    <br />
-    <h5 className="mb">
-      Without hyperlinks, the web would be a static directory. The Oasis is a 3
-      dimensional version of the hyperlink, enabling users to travel across a
-      fragmented ecosystem, increasing content discovery and pushing the
-      industry forward.
-    </h5>
-    <br />
-    <Link to="/oasis" className="btn white-btn">
-      Install Oasis today
-    </Link>
-  </div>
+   <div>
+      <h3 className="st">Hyperlinks for virtual reality</h3>
+      <br />
+      <h5 className="mb">
+         Without hyperlinks, the web would be a static directory. The Oasis is a
+         3 dimensional version of the hyperlink, enabling users to travel across
+         a fragmented ecosystem, increasing content discovery and pushing the
+         industry forward.
+      </h5>
+      <br />
+      {/* <Link to="/oasis" className="btn white-btn">
+         Install Oasis today
+      </Link> */}
+      <a className="btn white-btn" sp-show-form="94097">
+         Install Oasis today
+      </a>
+   </div>
 );
 
 const Oasis = () => (
-  <div id="oasis">
-    <div id="metaverse" className="first-show">
-      <VideoBg videoSrc={[Publishers_bg]} videoType={["webm"]} />
-      <div className="container">
-        <h3 className="st">The metaverse is here</h3>
-        <br />
-        <h4 className="mb">
-          Drag and drop the Oasis™ portal for users to travel between your app
-          and other VR apps. Make money by sending your churning users away, or
-          acquire new users from other leading apps.
-        </h4>
-        <br />
-        <ScrollLink
-          className="btn white-btn"
-          to="hyperlinks"
-          smooth={true}
-          duration={1000}
-        >
-          See how it works
-        </ScrollLink>
+   <div id="oasis">
+      <div id="metaverse" className="first-show">
+         <VideoBg
+            videoSrc={[Oasis_bg]}
+            videoType={["webm"]}
+            mobileBgImgClass={`videoBg-container-oasis`}
+         />
+         <div className="container">
+            <h3 className="st">The metaverse is here</h3>
+            <br />
+            <h4 className="mb">
+               The Oasis™ is a portal linking different VR worlds together.
+               Simply drag and drop it to your VR experience and your users can
+               travel freely across the VR apps they love.
+            </h4>
+            <br />
+            <ScrollLink
+               className="btn white-btn"
+               to="hyperlinks"
+               smooth={true}
+               duration={1000}
+            >
+               See how it works
+            </ScrollLink>
+         </div>
       </div>
-    </div>
 
-    <DescVid
-      videoName="hyperlinks"
-      VideoDescription={hyperlinksVidDesc}
-      videoSrc={Publishers_bg}
-    />
+      <DescVid
+         videoName="hyperlinks"
+         VideoDescription={hyperlinksVidDesc}
+         youtubeId={"ne1CiOsA4qo"}
+      />
 
-    <div id="forEveryone">
-      <div className="container row">
-        <div className="col-sm-12 col-md-4">
-          <h3 className="st">For VR users</h3>
-          <h4 className="mb">
-            Connect to trusted 3rd party advertising or affiliate networks.Ideal
-            for small to mid developers
-          </h4>
-        </div>
-        <div className="col-sm-12 col-md-4">
-          <h3 className="st">For publishers</h3>
-          <h4 className="mb">
-            Increase footfall by re-activate inactive users,or monetize your
-            churning usersby allowing them to teleport to other apps.
-          </h4>
-        </div>
-        <div className="col-sm-12 col-md-4">
-          <h3 className="st">For advertisers</h3>
-          <h4 className="mb">
-            Sponsor the metaverse travel with premium, non skippable video
-            placement. Opportunities coming soon. Contact us!
-          </h4>
-        </div>
+      <div id="forEveryone">
+         <div className="container row">
+            <div className="col-sm-12 col-md-4">
+               <h3 className="st">For developers</h3>
+               <h4 className="mb">
+                  Become part of the Metaverse, maximize discovery of your app
+                  and gain new users.
+               </h4>
+            </div>
+            <div className="col-sm-12 col-md-4">
+               <h3 className="st">For VR users</h3>
+               <h4 className="mb">
+                  Seamlessly switch between your favourite apps while staying
+                  immersed in virtual reality.
+               </h4>
+            </div>
+            <div className="col-sm-12 col-md-4">
+               <h3 className="st">For advertisers</h3>
+               <h4 className="mb">
+                  Sponsor the metaverse travel with premium placements. Coming
+                  soon. Contact us!
+               </h4>
+            </div>
+         </div>
       </div>
-    </div>
 
-    <HorizontalImgs
-      titleText={titleText}
-      subText={subText}
-      benefitText={benefitText}
-      images={comImgs}
-    />
-  </div>
+      <div className="horizontal-images">
+         <div className="container row">
+            <div className="col-sm-12 col-md-12 hor-img-dl">
+               <h4 className="st">
+                  World’s first metaverse travel accomplished on March 28th,
+                  2018
+               </h4>
+               <div id="transition">
+                  <div>
+                     <img src={ss} alt="Somnium Space" />
+                  </div>
+                  <div className="cc">
+                     <img className="white-img" src={arrowRight} alt="right" />
+                  </div>
+                  <div>
+                     <img src={hf} alt="High Fidelity" />
+                  </div>
+               </div>
+               <h4 className="st">Let’s make history together</h4>
+               <a className="btn white-btn" sp-show-form="94097">
+                  Join the waitlist
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
 );
 
 export default Oasis;

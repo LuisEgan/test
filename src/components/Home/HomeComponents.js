@@ -161,15 +161,15 @@ export const introOasis = () => (
       solution, it’s a community - we’re making each other stronger.
     </h5>
     <br />
-    <Link to="/contact" className="btn white-btn">
+    <a href="/contact" className="btn white-btn">
       Get in touch
-    </Link>
+    </a>
   </div>
 );
 
 export const WhyAdvir = ({ icons }) => (
   <div id="whyAdvir">
-    <h3 className="st">Why Admix</h3>
+    <h3 className="st principal-st">Why Admix</h3>
     <div className="container row">
       <div className="col-sm-12 col-md-4">
         <img src={icons[1]} />
@@ -202,7 +202,9 @@ export const WhyAdvir = ({ icons }) => (
 export const Discover = ({ image }) => (
   <div id="discover" className="img-of">
     <div className="img-of-img-container">
-      <h3 className="st">Discover the most advanced management platform</h3>
+      <h3 className="st principal-st">
+        Discover the most advanced management platform
+      </h3>
       <img src={image} />
     </div>
     <div className="container row">
