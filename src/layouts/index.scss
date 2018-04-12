@@ -216,7 +216,7 @@ a {
 }
 
 .white-btn {
-   color: $blueAdvir !important;
+   color: $blueAdvir;
    background-color: white;
 }
 
@@ -782,7 +782,7 @@ nav {
    top: 0;
    width: 100%;
    padding: 1.5rem 2rem !important;
-   padding-right: 1% !important;
+   //    padding-right: 1% !important;
    color: white;
 
    .navbar-toggler {
@@ -1199,6 +1199,9 @@ nav {
       background: $opaqueBlackBg,
          url(../assets/imgs/oasispage1.jpg) top center no-repeat;
       background-size: cover;
+      a {
+         color: $blueAdvir;
+      }
    }
 
    #forEveryone {
@@ -1246,9 +1249,25 @@ nav {
 
             &:last-child {
                width: 100%;
-
                img {
                   float: left;
+               }
+            }
+         }
+      }
+
+      @media only screen and (max-width: $mobileBreakpoint) {
+         #transition {
+            img {
+               width: 80%;
+               padding: 0 1%;
+            }
+            > div {
+               &:last-child {
+                  img {
+                     float: left;
+                     margin-left: 5%;
+                  }
                }
             }
          }

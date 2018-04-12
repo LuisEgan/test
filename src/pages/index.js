@@ -5,15 +5,15 @@ import { Player } from "video-react";
 
 // HOME COMPONENTS
 import {
-  HowWorks,
-  firstAdVidDesc,
-  DailyUsers,
-  nativePlacementsCarouselDesc,
-  flatAdsCarouselDesc,
-  introOasis,
-  WhyAdvir,
-  Discover,
-  Step4
+   HowWorks,
+   firstAdVidDesc,
+   DailyUsers,
+   nativePlacementsCarouselDesc,
+   flatAdsCarouselDesc,
+   introOasis,
+   WhyAdvir,
+   Discover,
+   Step4
 } from "../components//Home/HomeComponents";
 
 // GENERAL COMPONENTS
@@ -59,8 +59,6 @@ const installVids = [installVidW, installVid];
 const placeVids = [placeVidW, placeVid];
 const configVids = [configVidW, configVid];
 const vidsTypes = ["webm", "mp4"];
-// Gifs
-import AdsGif from "../assets/gifs/Advertisers_bg.gif";
 
 // Images for DescLineOFs
 import part1 from "../assets/imgs/book2.jpg";
@@ -75,7 +73,7 @@ const icons = [whyAdvir1, whyAdvir2, whyAdvir3];
 // Vars for HorizontalImgs
 const titleText = "Join a community of 150+ VR / AR developers";
 const subText =
-  "We cross-promote our developers to the community and to a wider audience with our network of influencers.";
+   "We cross-promote our developers to the community and to a wider audience with our network of influencers.";
 const benefitText = "Learn more about the benefits";
 const comImgs = [];
 
@@ -96,65 +94,65 @@ const comImgs = [];
 // };
 
 class IndexPage extends React.Component {
-  render() {
-    return (
-      <div id="home">
-        <HowWorks videoSrc={[Index_bgW, Index_bg]} videoType={vidsTypes} />
-        <DescVid
-          videoName="firstAd"
-          VideoDescription={firstAdVidDesc}
-          youtubeId={`-6Pm8qFu1rE`}
-        />
-        <div id="steps">
-          <DescLineOF
-            title="1. Install"
-            text="Download and install Admix for your favorite game engine and join a community of 150+ VR/AR developers."
-            videoSrc={installVids}
-            videoType={vidsTypes}
-          />
-          <DescLineOF
-            title="2. Place"
-            text="Define your inventory - areas of your content to sell to advertisers. It can be banners, videos or 3D placements. You keep the control."
-            imgSrc={part1}
-            videoSrc={placeVids}
-            videoType={vidsTypes}
-            youtubeId={`-6Pm8qFu1rE`}
-          />
-          <DescLineOF
-            title="3. Configure"
-            text="Use our web platform to manage your apps, filter the most relevant advertisers, and activate your campaign."
-            videoSrc={configVids}
-            videoType={vidsTypes}
-          />
-          <DescLineOF
-            title="4. Sell"
-            text="Your inventory is sold instantly to our network of advertisers. You take home 75% of the revenue paid by the advertiser every time a user looks at your ads."
-            Component={Step4}
-          />
-        </div>
-        <DailyUsers />
-        <DescCarousel
-          carouselName="placements"
-          CarouselDescription={nativePlacementsCarouselDesc}
-          images={nativeCarouselImgs}
-        />
-        <DescCarousel
-          carouselName="flatAds"
-          CarouselDescription={flatAdsCarouselDesc}
-          images={flatCarouselImgs}
-        />
-        <DescLeft descName="introOasis" Description={introOasis} />
-        <WhyAdvir icons={icons} />
-        <Discover image={laptopsTri} />
-        <HorizontalImgs
-          titleText={titleText}
-          subText={subText}
-          benefitText={benefitText}
-          images={comImgs}
-        />
-      </div>
-    );
-  }
+   render() {
+      return (
+         <div id="home">
+            <HowWorks videoSrc={[Index_bgW, Index_bg]} videoType={vidsTypes} />
+            <DescVid
+               videoName="firstAd"
+               VideoDescription={firstAdVidDesc}
+               youtubeId={`-6Pm8qFu1rE`}
+            />
+            <div id="steps">
+               <DescLineOF
+                  title="1. Install"
+                  text="Download and install Admix for your favorite game engine and join a community of 150+ VR/AR developers."
+                  videoSrc={installVids}
+                  videoType={vidsTypes}
+               />
+               <DescLineOF
+                  title="2. Place"
+                  text="Define your inventory - areas of your content to sell to advertisers. It can be banners, videos or 3D placements. You keep the control."
+                  imgSrc={part1}
+                  videoSrc={placeVids}
+                  videoType={vidsTypes}
+                  youtubeId={`-6Pm8qFu1rE`}
+               />
+               <DescLineOF
+                  title="3. Configure"
+                  text="Use our web platform to manage your apps, filter the most relevant advertisers, and activate your campaign."
+                  videoSrc={configVids}
+                  videoType={vidsTypes}
+               />
+               <DescLineOF
+                  title="4. Sell"
+                  text="Your inventory is sold instantly to our network of advertisers. You take home 75% of the revenue paid by the advertiser every time a user looks at your ads."
+                  Component={Step4}
+               />
+            </div>
+            <DailyUsers />
+            <DescCarousel
+               carouselName="placements"
+               CarouselDescription={nativePlacementsCarouselDesc}
+               images={nativeCarouselImgs}
+            />
+            <DescCarousel
+               carouselName="flatAds"
+               CarouselDescription={flatAdsCarouselDesc}
+               images={flatCarouselImgs}
+            />
+            <DescLeft descName="introOasis" Description={introOasis} />
+            <WhyAdvir icons={icons} />
+            <Discover image={laptopsTri} />
+            <HorizontalImgs
+               titleText={titleText}
+               subText={subText}
+               benefitText={benefitText}
+               images={comImgs}
+            />
+         </div>
+      );
+   }
 }
 
 export default IndexPage;

@@ -73,9 +73,6 @@ class Header extends React.Component {
             >
                <ul className="navbar-nav mr-auto">
                   <li className="nav-item">
-                     {/* <Link to="/oasis" className="nav-link" onClick={this.handleClick}>
-                The Oasis™
-              </Link> */}
                      <Link
                         to="/"
                         className="nav-link"
@@ -84,15 +81,6 @@ class Header extends React.Component {
                         Developers
                      </Link>
                   </li>
-                  {/* <li className="nav-item">
-                <Link
-                  to="/community"
-                  className="nav-link"
-                  onClick={this.handleClick}
-                >
-                  Community
-                </Link>
-              </li> */}
                   <li className="nav-item">
                      <Link
                         to="/advertisers"
@@ -100,6 +88,15 @@ class Header extends React.Component {
                         onClick={this.handleClick}
                      >
                         Advertisers
+                     </Link>
+                  </li>
+                  <li className="nav-item">
+                     <Link
+                        to="/oasis"
+                        className="nav-link"
+                        onClick={this.handleClick}
+                     >
+                        Oasis™
                      </Link>
                   </li>
                   <li className="nav-item">
@@ -143,7 +140,7 @@ class Header extends React.Component {
                         Blog
                      </Link>
                   </li>
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                      <Link
                         to="/"
                         className="nav-link"
@@ -151,7 +148,7 @@ class Header extends React.Component {
                      >
                         Login
                      </Link>
-                  </li>
+                  </li> */}
                </ul>
             </div>
          </nav>

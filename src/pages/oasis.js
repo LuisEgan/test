@@ -13,12 +13,15 @@ import VideoBg from "../components/VideoBg";
 
 // ASSETS
 import howWorksBg from "../assets/imgs/advertiserpage2.jpg";
-import Publishers_bg from "../assets/vids/Publishers_bg.webm";
-import Oasis_bg from "../assets/vids/Oasis_bg.webm";
 import laptops from "../assets/imgs/laptops.png";
 import ss from "../assets/imgs/SS.png";
 import hf from "../assets/imgs/HF.png";
 import arrowRight from "../assets/imgs/arrowRight.png";
+
+// VIDEOS
+import Publishers_bg from "../assets/vids/Publishers_bg.webm";
+import Oasis_bg from "../assets/vids/Oasis_bg.mp4";
+import Oasis_bgW from "../assets/vids/Oasis_bg.webm";
 
 // Vars for HorizontalImgs
 const titleText = "A collaboration between industry leaders";
@@ -39,10 +42,10 @@ const hyperlinksVidDesc = () => (
       </h5>
       <br />
       {/* <Link to="/oasis" className="btn white-btn">
-         Install Oasis today
+         Install Oasis
       </Link> */}
       <a className="btn white-btn" sp-show-form="94097">
-         Install Oasis today
+         Install Oasis
       </a>
    </div>
 );
@@ -51,8 +54,8 @@ const Oasis = () => (
    <div id="oasis">
       <div id="metaverse" className="first-show">
          <VideoBg
-            videoSrc={[Oasis_bg]}
-            videoType={["webm"]}
+            videoSrc={[Oasis_bgW, Oasis_bg]}
+            videoType={["webm", "mp4"]}
             mobileBgImgClass={`videoBg-container-oasis`}
          />
          <div className="container">
@@ -61,7 +64,7 @@ const Oasis = () => (
             <h4 className="mb">
                The Oasis™ is a portal linking different VR worlds together.
                Simply drag and drop it to your VR experience and your users can
-               travel freely across the VR apps they love.
+               teleport freely across the VR apps they love.
             </h4>
             <br />
             <ScrollLink
@@ -78,7 +81,7 @@ const Oasis = () => (
       <DescVid
          videoName="hyperlinks"
          VideoDescription={hyperlinksVidDesc}
-         youtubeId={"ne1CiOsA4qo"}
+         youtubeId={"yq2dR_tq0e0"}
       />
 
       <div id="forEveryone">
@@ -116,13 +119,17 @@ const Oasis = () => (
                </h4>
                <div id="transition">
                   <div>
-                     <img src={ss} alt="Somnium Space" />
+                     <a href="http://www.somniumspace.com/" target="_blank">
+                        <img src={ss} alt="Somnium Space" />{" "}
+                     </a>
                   </div>
                   <div className="cc">
                      <img className="white-img" src={arrowRight} alt="right" />
                   </div>
                   <div>
-                     <img src={hf} alt="High Fidelity" />
+                     <a href="http://www.highfidelity.com/" target="_blank">
+                        <img src={hf} alt="High Fidelity" />
+                     </a>
                   </div>
                </div>
                <h4 className="st">Let’s make history together</h4>
