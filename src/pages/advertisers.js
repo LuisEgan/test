@@ -43,253 +43,253 @@ const flatCarouselImgs = [flat1, flat2, flat3, flat4, flat5, flat6, flat7];
 const flatVCarouselImgs = [flatV1, flatV2];
 
 const hardDesc = () => (
-  <div>
-    <h3 className="st">So simple that it is hard to believe</h3>
-    <br />
-    <h5 className="mb">
-      Admix is the first Supply Side Platform for VR/AR aggregating inventory
-      across apps. That inventory supports IAB standards formats, and is listed
-      on Demand Side Partners you probably already use. That means that for you,
-      the brand it’s business as usual.
-    </h5>
-  </div>
+   <div>
+      <h3 className="st">So simple that it is hard to believe</h3>
+      <br />
+      <h5 className="mb">
+         Admix is the first Supply Side Platform for VR/AR aggregating inventory
+         across apps. That inventory supports IAB standards formats, and is
+         listed on Demand Side Partners you probably already use. That means
+         that for you, the brand it’s business as usual.
+      </h5>
+   </div>
 );
 
 const betterFutureDesc = () => (
-  <div>
-    <h3 className="st">Creating a better future for adtech</h3>
-    <br />
-    <h5 className="mb">
-      We are leading vrarpledge.org, an association fighting against intrusive
-      ads in immersive technologies.
-    </h5>
-    <br />
-    <a
-      href="https://www.vrarpledge.org/"
-      target="_blank"
-      className="btn white-btn"
-    >
-      Learn more
-    </a>
-  </div>
+   <div>
+      <h3 className="st">Creating a better future for adtech</h3>
+      <br />
+      <h5 className="mb">
+         We are leading vrarpledge.org, an association fighting against
+         intrusive ads in immersive technologies.
+      </h5>
+      <br />
+      <a
+         href="https://www.vrarpledge.org/"
+         target="_blank"
+         className="btn white-btn"
+      >
+         Learn more
+      </a>
+   </div>
 );
 
 const nativePlacementsDesc = () => (
-  <div>
-    <h3 className="st">Native placements for AR and AR</h3>
-    <br />
-    <h5 className="mb">
-      The next generation of programmatic advertising. Serve 3D, dynamic product
-      placements in VR and AR. Admix’s proprietary format is compatible with the
-      IAB Native formats, so it’s business as usual for you - we can even build
-      the 3D creative for you.
-    </h5>
-  </div>
+   <div>
+      <h3 className="st">Native placements for AR and AR</h3>
+      <br />
+      <h5 className="mb">
+         The next generation of programmatic advertising. Serve 3D, dynamic
+         product placements in VR and AR. Admix’s proprietary format is
+         compatible with the IAB Native formats, so it’s business as usual for
+         you - we can even build the 3D creative for you.
+      </h5>
+   </div>
 );
 
 const videoAdsDesc = () => (
-  <div>
-    <h3 className="st">Video ads for VR</h3>
-    <br />
-    <h5 className="mb">
-      Admix is the only SSP enabling you to serve videos to a captive VR
-      audience - a new way to discover content. Compatible with your existing
-      VAST tags, you can get your video campaign started in minutes from your
-      preferred DSP.
-    </h5>
-  </div>
+   <div>
+      <h3 className="st">Video ads for VR</h3>
+      <br />
+      <h5 className="mb">
+         Admix is the only SSP enabling you to serve videos to a captive VR
+         audience - a new way to discover content. Compatible with your existing
+         VAST tags, you can get your video campaign started in minutes from your
+         preferred DSP.
+      </h5>
+   </div>
 );
 
 const displayAdsDesc = () => (
-  <div>
-    <h3 className="st">Display ads for VR</h3>
-    <br />
-    <h5 className="mb">
-      The easiest way to get started. With Admix, you are free to re-use your
-      display creatives without having to update it. It just works from your
-      preferred DSPs - like any web or mobile display campaign. We make display
-      advertising trendy again!
-    </h5>
-  </div>
+   <div>
+      <h3 className="st">Display ads for VR</h3>
+      <br />
+      <h5 className="mb">
+         The easiest way to get started. With Admix, you are free to re-use your
+         display creatives without having to update it. It just works from your
+         preferred DSPs - like any web or mobile display campaign. We make
+         display advertising trendy again!
+      </h5>
+   </div>
 );
 
 const Advertisers = () => (
-  <div id="advertisers">
-    <div id="yourBrand" className="first-show">
-      <VideoBg
-        videoSrc={[Advertisers_bgW, Advertisers_bg]}
-        videoType={["webm", "mp4"]}
+   <div id="advertisers">
+      <div id="yourBrand" className="first-show">
+         <VideoBg
+            videoSrc={[Advertisers_bgW, Advertisers_bg]}
+            videoType={["webm", "mp4"]}
+         />
+         <div className="container">
+            <h3 className="st">Your brand, immersed.</h3> <br />
+            <h4 className="mb">
+               Buy VR/AR inventory programmatically through DSPs you already
+               use. Reach an engaged audience with standardized ad units, access
+               gaze tracking data, and get ready for the immersive revolution.
+            </h4>
+            <br />
+            <ScrollLink
+               className="btn white-btn"
+               to="hardToBelieve"
+               smooth={true}
+               duration={1000}
+            >
+               See how it works
+            </ScrollLink>
+         </div>
+         <span className="cc">
+            <img src={yahoo} />
+            <img src={aol} />
+            <img src={bidswitch} />
+         </span>
+      </div>
+
+      {/* <DescLeft descName="hardToBelieve" Description={hardDesc} /> */}
+      <DescVid
+         videoName="hardToBelieve"
+         VideoDescription={hardDesc}
+         youtubeId={`-6Pm8qFu1rE`}
       />
-      <div className="container">
-        <h3 className="st">Your brand, immersed.</h3> <br />
-        <h4 className="mb">
-          Buy VR/AR inventory programmatically through DSPs you already use.
-          Reach an engaged audience with standardized ad units, access gaze
-          tracking data, and get ready for the immersive revolution.
-        </h4>
-        <br />
-        <ScrollLink
-          className="btn white-btn"
-          to="hardToBelieve"
-          smooth={true}
-          duration={1000}
-        >
-          See how it works
-        </ScrollLink>
+      <div id="statistics" className="statistics">
+         <div className="container row">
+            <div className="col-sm-12 col-md-4 cc borderR">
+               <h3 className="st">400%</h3>
+               <h4 className="st">
+                  Year on year <br /> market growth
+               </h4>
+            </div>
+            <div className="col-sm-12 col-md-4 cc borderR">
+               <h3 className="st">10M</h3>
+               <h4 className="st">
+                  Monthly active <br /> VR users
+               </h4>
+            </div>
+            <div className="col-sm-12 col-md-4 cc">
+               <h3 className="st">300M</h3>
+               <h4 className="st">
+                  Users with <br /> access to AR
+               </h4>
+            </div>
+         </div>
       </div>
-      <span className="cc">
-        <img src={yahoo} />
-        <img src={aol} />
-        <img src={bidswitch} />
-      </span>
-    </div>
 
-    {/* <DescLeft descName="hardToBelieve" Description={hardDesc} /> */}
-    <DescVid
-      videoName="hardToBelieve"
-      VideoDescription={hardDesc}
-      youtubeId={`-6Pm8qFu1rE`}
-    />
-    <div id="statistics" className="statistics">
-      <div className="container row">
-        <div className="col-sm-12 col-md-4 cc borderR">
-          <h3 className="st">400%</h3>
-          <h4 className="st">
-            Year on year <br /> market growth
-          </h4>
-        </div>
-        <div className="col-sm-12 col-md-4 cc borderR">
-          <h3 className="st">10M</h3>
-          <h4 className="st">
-            Monthly active <br /> VR users
-          </h4>
-        </div>
-        <div className="col-sm-12 col-md-4 cc">
-          <h3 className="st">300M</h3>
-          <h4 className="st">
-            Users with <br /> access to AR
-          </h4>
-        </div>
+      <DescCarousel
+         carouselName="nativePlacements"
+         CarouselDescription={nativePlacementsDesc}
+         images={nativeCarouselImgs}
+      />
+      <DescCarousel
+         carouselName="videoAds"
+         CarouselDescription={videoAdsDesc}
+         images={flatVCarouselImgs}
+      />
+      <DescCarousel
+         carouselName="displayAds"
+         CarouselDescription={displayAdsDesc}
+         images={flatCarouselImgs}
+      />
+
+      <div id="reporting" className="img-of">
+         <div className="img-of-img-container">
+            <h3 className="st principal-st">
+               Stunning VR/AR reporting and analytics
+            </h3>
+            <img src={laptop} />
+         </div>
+         <div className="container row">
+            <div className="col-sm-12 col-md-3">
+               <h3 className="st">Contextual data</h3>
+               <h4 className="mb">
+                  Admix provides tools to understand the VR/AR environment and
+                  serve relevant ads without intruding on user privacy.
+               </h4>
+            </div>
+            <div className="col-sm-12 col-md-3">
+               <h3 className="st">Gaze tracking</h3>
+               <h4 className="mb">
+                  Anonymously tracking where users look, Admix validates
+                  impressions that have been seen by a real human – not a bot!
+               </h4>
+            </div>
+            <div className="col-sm-12 col-md-3">
+               <h3 className="st">Tiered engagement</h3>
+               <h4 className="mb">
+                  Pay a different amount based on user engagement - gaze,
+                  motion, action - and maximise your campaign budget.
+               </h4>
+            </div>
+            <div className="col-sm-12 col-md-3">
+               <h3 className="st">Data analysis</h3>
+               <h4 className="mb">
+                  Analyse aggregated heatmaps to understand user behaviour,
+                  tweak campaigns and improve results.
+               </h4>
+            </div>
+         </div>
       </div>
-    </div>
 
-    <DescCarousel
-      carouselName="nativePlacements"
-      CarouselDescription={nativePlacementsDesc}
-      images={nativeCarouselImgs}
-    />
-    <DescCarousel
-      carouselName="videoAds"
-      CarouselDescription={videoAdsDesc}
-      images={flatVCarouselImgs}
-    />
-    <DescCarousel
-      carouselName="displayAds"
-      CarouselDescription={displayAdsDesc}
-      images={flatCarouselImgs}
-    />
-
-    <div id="reporting" className="img-of">
-      <div className="img-of-img-container">
-        <h3 className="st principal-st">
-          Stunning VR/AR reporting and analytics
-        </h3>
-        <img src={laptop} />
+      <div id="circles">
+         <h2 className="st principal-st">Pioneering engagement in VR/AR</h2>
+         <div className="container row">
+            <div className="col-sm-12 col-md-4">
+               <CircleText
+                  percent="29"
+                  strokeWidth="6"
+                  trailWidth="6"
+                  strokeColor="#5077E1"
+                  text="ENGAGEMENT"
+               />
+               <div>
+                  <h3 className="st">Active engagement</h3>
+               </div>
+               <div>
+                  <h4 className="mb">
+                     Users actively interacting with the placement (view or
+                     action), across all formats.
+                  </h4>
+               </div>
+            </div>
+            <div className="col-sm-12 col-md-4">
+               <CircleText
+                  percent="67"
+                  strokeWidth="6"
+                  trailWidth="6"
+                  strokeColor="#37CACA"
+                  text="BRAND RECALL"
+               />
+               <div>
+                  <h3 className="st">Lasting impact</h3>
+               </div>
+               <div>
+                  <h4 className="mb">
+                     Users able to name the brands they have seen in a VR
+                     experience they just completed.
+                  </h4>
+               </div>
+            </div>
+            <div className="col-sm-12 col-md-4">
+               <CircleText
+                  percent="73"
+                  strokeWidth="6"
+                  trailWidth="6"
+                  strokeColor="#4B44C5"
+                  text="POSITIVE FEEDBACK"
+               />
+               <div>
+                  <h3 className="st">A great experience</h3>
+               </div>
+               <div>
+                  <h4 className="mb">
+                     Users reporting that brand placements didn't impact the
+                     experience negatively.
+                  </h4>
+               </div>
+            </div>
+         </div>
       </div>
-      <div className="container row">
-        <div className="col-sm-12 col-md-3">
-          <h3 className="st">Gaze tracking</h3>
-          <h4 className="mb">
-            Tracking where people looks, Admix validates impressions that have
-            actually been seen by a human – not bots!.
-          </h4>
-        </div>
-        <div className="col-sm-12 col-md-3">
-          <h3 className="st">Data analysis</h3>
-          <h4 className="mb">
-            Analyse heatmaps or export your data, to understand customer
-            behaviour and maximize engagement.
-          </h4>
-        </div>
-        <div className="col-sm-12 col-md-3">
-          <h3 className="st">Segment audiences</h3>
-          <h4 className="mb">
-            Gaze tracking data enables us to segment users based on their
-            engagement with specific ad categories.
-          </h4>
-        </div>
-        <div className="col-sm-12 col-md-3">
-          <h3 className="st">Omni-channel</h3>
-          <h4 className="mb">
-            Create lookalike audiences outside of VR/AR, enriching your first
-            party data with insights from Admix.
-          </h4>
-        </div>
-      </div>
-    </div>
 
-    <div id="circles">
-      <h2 className="st principal-st">Pioneering engagement in VR/AR</h2>
-      <div className="container row">
-        <div className="col-sm-12 col-md-4">
-          <CircleText
-            percent="29"
-            strokeWidth="6"
-            trailWidth="6"
-            strokeColor="#5077E1"
-            text="ENGAGEMENT"
-          />
-          <div>
-            <h3 className="st">Active engagement</h3>
-          </div>
-          <div>
-            <h4 className="mb">
-              Users actively interacting with the placement (view or action),
-              across all formats.
-            </h4>
-          </div>
-        </div>
-        <div className="col-sm-12 col-md-4">
-          <CircleText
-            percent="67"
-            strokeWidth="6"
-            trailWidth="6"
-            strokeColor="#37CACA"
-            text="BRAND RECALL"
-          />
-          <div>
-            <h3 className="st">Lasting impact</h3>
-          </div>
-          <div>
-            <h4 className="mb">
-              Users able to name the brands they have seen in a VR experience
-              they just completed.
-            </h4>
-          </div>
-        </div>
-        <div className="col-sm-12 col-md-4">
-          <CircleText
-            percent="73"
-            strokeWidth="6"
-            trailWidth="6"
-            strokeColor="#4B44C5"
-            text="POSITIVE FEEDBACK"
-          />
-          <div>
-            <h3 className="st">A great experience</h3>
-          </div>
-          <div>
-            <h4 className="mb">
-              Users reporting that brand placements didn't impact the experience
-              negatively.
-            </h4>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <DescLeft descName="betterFuture" Description={betterFutureDesc} />
-  </div>
+      <DescLeft descName="betterFuture" Description={betterFutureDesc} />
+   </div>
 );
 
 export default Advertisers;
