@@ -17,6 +17,8 @@ import laptops from "../assets/imgs/laptops.png";
 import ss from "../assets/imgs/SS.png";
 import hf from "../assets/imgs/HF.png";
 import arrowRight from "../assets/imgs/arrowRight.png";
+import VB from "../assets/imgs/VB-logo-300x300.png";
+import VF from "../assets/imgs/vrfocus.png";
 
 // VIDEOS
 import Publishers_bg from "../assets/vids/Publishers_bg.webm";
@@ -75,6 +77,23 @@ const Oasis = () => (
             >
                See how it works
             </ScrollLink>
+            <div className="first-show-footer">
+               <div>As seen on</div>
+               <div className="cc">
+                  <a
+                     href="https://venturebeat.com/2018/04/05/ready-player-one-inspires-oasis-vr-portals-so-users-can-seamlessly-switch-apps/"
+                     target="_blank"
+                  >
+                     <img src={VB} alt="" />
+                  </a>
+                  <a
+                     href="https://www.vrfocus.com/2018/04/seamlessly-transition-between-vr-games-apps-with-oasis/"
+                     target="_blank"
+                  >
+                     <img src={VF} alt="" />
+                  </a>
+               </div>
+            </div>
          </div>
       </div>
 
