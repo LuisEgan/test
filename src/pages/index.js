@@ -101,7 +101,7 @@ class IndexPage extends React.Component {
             <DescVid
                videoName="firstAd"
                VideoDescription={firstAdVidDesc}
-               youtubeId={`-6Pm8qFu1rE`}
+               youtubeId={`Lkg38k_tBSk`}
             />
             <div id="steps">
                <DescLineOF

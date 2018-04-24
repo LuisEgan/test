@@ -769,6 +769,33 @@ a {
    filter: brightness(100);
 }
 
+.first-show-footer {
+   position: absolute;
+   bottom: 5%;
+   display: flex;
+   flex-flow: column;
+   width: 100%;
+   left: 0;
+
+   a {
+      width: 8%;
+      margin: 0 2%;
+      img {
+         width: 100%;
+      }
+   }
+
+   > div {
+      color: white;
+   }
+
+   @media only screen and (max-width: 760px) {
+      a {
+         width: 20%;
+      }
+   }
+}
+
 /******************************************************/
 /***********************NAVBAR*************************/
 /******************************************************/
