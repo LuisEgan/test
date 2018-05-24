@@ -1468,6 +1468,73 @@ nav {
 }
 
 /******************************************************/
+/**********************ACADEMY*************************/
+/******************************************************/
+
+#academy {
+   .first-show {
+      // background: $horizontalGradientOpaque,
+      //   url(../assets/imgs/advertiserpage2.jpg) top center no-repeat;
+      background: $horizontalGradientOpaque;
+
+      h4 {
+         line-height: 1.6;
+      }
+   }
+
+   .first-show-footer {
+      flex-flow: row;
+      align-items: center;
+      justify-content: center;
+
+      a {
+         margin: 0;
+      }
+
+      img {
+         width: 50%;
+      }
+   }
+
+   #hyperlinks {
+      background: $opaqueBlackBg,
+         url(../assets/imgs/academy1.jpg) top center no-repeat;
+      background-size: cover;
+      a {
+         color: $blueAdvir;
+      }
+   }
+
+   #forEveryone {
+      padding: 7%;
+      background-color: white;
+
+      > .container {
+         background-color: white;
+         padding: 5%;
+      }
+
+      h4 {
+         color: $gray !important;
+      }
+      h3 {
+         color: black !important;
+      }
+   }
+
+   #getStarted {
+      @extend .cc;
+      background: $horizontalGradient;
+      padding: 7% 5%;
+
+      > div {
+         width: 40%;
+         text-align: center;
+      }
+   }
+}
+
+/******************************************************/
 /*********************DOWNLOAD*************************/
 /******************************************************/
 
@@ -1699,5 +1766,11 @@ nav {
             justify-content: center;
          }
       }
+   }
+}
+
+.gdpr {
+   span {
+      color: black !important;
    }
 }
