@@ -21,7 +21,12 @@ const VideoBg = () => (
          {/* <Link to="/download" className="btn">
         Download Admix
       </Link> */}
-         <a className="btn white-btn" sp-show-form="94097">
+         {/* <a className="btn white-btn" sp-show-form="94097"> */}
+         <a
+            className="btn white-btn"
+            href="http://app.admix.in/download"
+            target="__blank"
+         >
             Download Admix
          </a>
       </div>
@@ -29,24 +34,29 @@ const VideoBg = () => (
          <Link to="/">Developers</Link>
          <Link to="/advertisers">Advertisers</Link>
          <Link to="/oasis">Oasis™</Link>
+         {/* <Link to="/contact">Get in touch</Link> */}
+         <a href="/contact">Get in touch</a>
       </div>
       <div className="col-sm-12 col-md-3">
          {/* <Link to="/community">Community</Link> */}
-         {/* <Link to="/contact">Get in touch</Link> */}
-         <a href="/contact">Get in touch</a>
+         <Link to="/academy">Academy</Link>
          <Link to="/blog">Blog</Link>
+         <a href="http://app.admix.in/login">Login</a>
          <div id="sn-buttons" className="cc">
-            <a>
+            <a
+               href="https://web.facebook.com/groups/249932279077667/"
+               target="_blank"
+            >
                <i className="fab fa-facebook-f" />
             </a>
             <a>
-               <i className="fab fa-twitter" />
+               <i className="fab fa-twitter not-yet" />
             </a>
             <a>
-               <i className="fab fa-instagram" />
+               <i className="fab fa-instagram not-yet" />
             </a>
             <a>
-               <i className="fab fa-youtube" />
+               <i className="fab fa-youtube not-yet" />
             </a>
          </div>
       </div>

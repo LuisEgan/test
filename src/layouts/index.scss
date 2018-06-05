@@ -220,6 +220,15 @@ a {
    background-color: white;
 }
 
+.blue-btn {
+   color: white;
+   background-color: $blueAdvir;
+
+   &:hover {
+      color: white;
+   }
+}
+
 .gradient-bg {
    position: absolute;
    height: 100%;
@@ -355,9 +364,9 @@ a {
       // height: 100%;
       // width: 50%;
       position: relative;
+      padding: 0 3%;
 
       iframe {
-         padding: 5% calc(5% + 1vw);
          border: 0;
          width: 100%;
          max-width: 1000px;
@@ -859,6 +868,25 @@ nav {
             a {
                @extend .white-btn;
                @include border-radius(5px);
+            }
+         }
+      }
+
+      .dropdown {
+         margin-left: 5vw;
+         a {
+            color: $blueAdvir;
+            margin: 0;
+            text-align: left;
+         }
+
+         .btn {
+            background-color: $blueAdvir;
+            border: 0;
+            padding: 0.6vw 1.5vw;
+
+            &:focus {
+               box-shadow: 0 0 0 0.2rem #76c6fc;
             }
          }
       }
@@ -1496,12 +1524,42 @@ nav {
       }
    }
 
-   #hyperlinks {
+   #academyVid {
       background: $opaqueBlackBg,
          url(../assets/imgs/academy1.jpg) top center no-repeat;
       background-size: cover;
       a {
          color: $blueAdvir;
+      }
+   }
+
+   #partners {
+      background-color: white;
+      text-align: center;
+
+      img {
+         max-width: 15vw;
+         margin: 0 2vw;
+      }
+
+      h1 {
+         color: black !important;
+         font-size: 1.75rem !important;
+         margin-bottom: 5vh;
+      }
+
+      p {
+         width: 40%;
+         margin: 5vw auto;
+         text-align: left;
+      }
+
+      a {
+         margin: 5vw;
+         padding: 1% 2%;
+      }
+
+      #partners-logos {
       }
    }
 
@@ -1678,31 +1736,18 @@ nav {
    }
 
    #sn-buttons {
-      // display: flex;
-      // align-content: center;
-      // // padding: 15% 0 0;
-      // a {
-      //   padding: 0 2%;
-
-      //   &:hover {
-      //     text-decoration: none;
-      //   }
-      // }
       i {
-         // @extend .cc;
-         // padding: 3%;
-         // margin: 0 2%;
-         // @include border-radius(100%);
-         // background-color: black;
-         // color: white;
          font-size: 1.3em;
-         // width: 40px;
-         // height: 40px;
 
          &:hover {
-            // cursor: pointer;
+            color: $blueAdvir;
+         }
+      }
+
+      i.not-yet {
+         &:hover {
+            color: #b3b3b3;
             cursor: not-allowed;
-            // background-color: $grayLighter;
          }
       }
    }

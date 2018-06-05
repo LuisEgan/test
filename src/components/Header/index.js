@@ -116,29 +116,59 @@ class Header extends React.Component {
                      </a>
                   </li>
                   <li className="nav-item" id="download-plugin">
-                     {/* <Link
-                to="/download"
-                className="nav-link"
-                onClick={this.handleClick}
-              >
-                Download Admix
-              </Link> */}
                      <a
                         className="nav-link"
-                        onClick={this.handleClick}
-                        sp-show-form="94097"
+                        href="http://app.admix.in/login?register"
+                        target="__blank"
+                        // onClick={this.handleClick}
+                        // sp-show-form="94097"
                      >
-                        Download Admix
+                        Get started
                      </a>
                   </li>
                   <li className="nav-item">
-                     <Link
+                     <div className="dropdown">
+                        <button
+                           className="btn btn-secondary dropdown-toggle"
+                           type="button"
+                           id="dropdownMenuButton"
+                           data-toggle="dropdown"
+                           aria-haspopup="true"
+                           aria-expanded="false"
+                        >
+                           More
+                        </button>
+                        <div
+                           className="dropdown-menu"
+                           aria-labelledby="dropdownMenuButton"
+                        >
+                           <Link to="/academy" className="dropdown-item">
+                              Academy
+                           </Link>
+                           <a
+                              className="dropdown-item"
+                              href="http://admix.in/blog/"
+                              target="__blank"
+                           >
+                              Blog
+                           </a>
+                           <a
+                              className="dropdown-item"
+                              href="http://app.admix.in/login"
+                              target="__blank"
+                           >
+                              Login
+                           </a>
+                        </div>
+                     </div>
+
+                     {/* <Link
                         to="/blog"
                         className="nav-link"
                         onClick={this.handleClick}
                      >
                         Blog
-                     </Link>
+                     </Link> */}
                   </li>
                   {/* <li className="nav-item">
                      <Link
